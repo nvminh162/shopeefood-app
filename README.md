@@ -75,3 +75,7 @@ Contributions are welcome. Please feel free to submit a Pull Request.
 ## License
 
 [MIT License](LICENSE)
+
+# design figma:
+
+https://www.figma.com/design/HP6zajub0oqkH8qiuzyTv8/React-Native--basic-?node-id=0-1&p=f

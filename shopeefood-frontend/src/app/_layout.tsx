@@ -13,6 +13,7 @@ const RootLayout = () => {
         },
       }}
     >
+      <Stack.Screen name="(auth)/signup" options={{ headerShown: false }} />
       <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="(tabs)" options={{ headerTitle: "Trang chủ" }} />
       <Stack.Screen

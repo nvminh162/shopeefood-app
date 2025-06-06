@@ -6,7 +6,7 @@ import ShareButton from "@/components/button/share.button";
 import TextBetweenLine from "@/components/button/text.between.line";
 import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
-import { Link } from "expo-router";
+import { Link, Redirect } from "expo-router";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
@@ -28,11 +28,11 @@ const styles = StyleSheet.create({
 });
 
 const WelcomePage = () => {
-  // if (true) {
-  //   return (
-  //     <Redirect href={"/(auth)/signup"} />
-  //   )
-  // }
+  if (true) {
+    return (
+      <Redirect href={"/(auth)/verify"} />
+    )
+  }
 
   return (
     <ImageBackground

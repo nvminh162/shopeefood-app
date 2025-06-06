@@ -23,6 +23,8 @@ const SignUpPage = () => {
       const res = await registerAPI(name, email, password);
       if (res.data) {
         router.navigate("/(auth)/verify");
+      } else {
+        alert(res.message)
       }
       console.log(res.data, a);
     } catch (err) {

@@ -1,10 +1,10 @@
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
 import ShareInput from "@/components/input/share.input";
+import { registerAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
-import axios from "axios";
-import { Link } from "expo-router";
-import { useEffect, useState } from "react";
+import { Link, router } from "expo-router";
+import { useState } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -13,24 +13,22 @@ const styles = StyleSheet.create({
 });
 
 const SignUpPage = () => {
-  const URL_BACKEND = process.env.EXPO_PUBLIC_API_URL;
-
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
-  useEffect(() => {
-    const fetchAPI = async () => {
-      try {
-        const a = Platform.OS === 'android' ? "10.0.2.2" : "localhost" //check device
-        const res = await axios.get(URL_BACKEND!);
-        console.log(res.data, a);
-       } catch (err) {
-        console.log(err);
+  const handleSignUp = async () => {
+    try {
+      const a = Platform.OS === "android" ? "10.0.2.2" : "localhost"; //check port device
+      const res = await registerAPI(name, email, password);
+      if (res.data) {
+        router.navigate("/(auth)/verify");
       }
-    };
-    fetchAPI();
-  }, []);
+      console.log(res.data, a);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -63,9 +61,7 @@ const SignUpPage = () => {
         {/* Spacing between input and button */}
         <ShareButton
           title="Sign Up"
-          onPress={() => {
-            console.log(name, email, password);
-          }}
+          onPress={handleSignUp}
           textStyle={{ color: "#fff" }}
           buttonStyle={{
             justifyContent: "center",

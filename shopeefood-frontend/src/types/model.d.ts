@@ -8,7 +8,6 @@ declare global {
     data?: T;
   }
 
-  IBackendRes<IRegister>;
   interface IRegister {
     _id: string;
   }

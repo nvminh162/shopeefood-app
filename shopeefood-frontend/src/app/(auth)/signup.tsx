@@ -5,7 +5,7 @@ import { registerAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
 import { Link, router } from "expo-router";
 import { useState } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const styles = StyleSheet.create({
@@ -19,14 +19,12 @@ const SignUpPage = () => {
 
   const handleSignUp = async () => {
     try {
-      const a = Platform.OS === "android" ? "10.0.2.2" : "localhost"; //check port device
       const res = await registerAPI(name, email, password);
       if (res.data) {
         router.navigate("/(auth)/verify");
       } else {
         alert(res.message)
       }
-      console.log(res.data, a);
     } catch (err) {
       console.log(err);
     }

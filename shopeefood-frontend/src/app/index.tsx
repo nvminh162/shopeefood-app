@@ -2,10 +2,11 @@ import facebookLogo from "@/assets/auth/facebook.png";
 import googleLogo from "@/assets/auth/google.png";
 import backgroundAuth from "@/assets/auth/welcome-background.png";
 import ShareButton from "@/components/button/share.button";
+import SocialButton from "@/components/button/social.button";
 import TextBetweenLine from "@/components/button/text.between.line";
 import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
-import { Link, Redirect } from "expo-router";
+import { Link, Redirect, router } from "expo-router";
 import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
@@ -47,41 +48,11 @@ const WelcomePage = () => {
             </Text>
           </View>
           <View style={styles.welcomeBtn}>
-            <TextBetweenLine title="Sign in with"/>
-            <View
-              style={{
-                flexDirection: "row",
-                justifyContent: "center",
-                gap: 30,
-              }}
-            >
-              <ShareButton
-                title="Facebook"
-                onPress={() => alert("Facebook")}
-                textStyle={{ textTransform: "uppercase" }}
-                buttonStyle={{
-                  justifyContent: "center",
-                  borderRadius: 30,
-                  backgroundColor: "#fff",
-                }}
-                icon={<Image source={facebookLogo} />}
-              />
-              <ShareButton
-                title="Google"
-                onPress={() => alert("Google")}
-                textStyle={{ textTransform: "uppercase" }}
-                buttonStyle={{
-                  justifyContent: "center",
-                  borderRadius: 30,
-                  backgroundColor: "#fff",
-                  paddingHorizontal: 20,
-                }}
-                icon={<Image source={googleLogo} />}
-              />
-            </View>
+            <TextBetweenLine title="Sign in with" />
+            <SocialButton />
             <ShareButton
               title="Login with Email"
-              onPress={() => alert("Email")}
+              onPress={() => router.navigate("/(auth)/login")}
               textStyle={{ color: "#fff" }}
               buttonStyle={{
                 justifyContent: "center",

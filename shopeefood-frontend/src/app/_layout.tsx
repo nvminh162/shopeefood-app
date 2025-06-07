@@ -27,7 +27,7 @@ const RootLayout = () => {
           />
           <Stack.Screen
             name="(auth)/login"
-            options={{ headerTitle: "Đăng nhập" }}
+            options={{ headerTitle: "Đăng nhập", headerShown: false }}
           />
         </Stack>
       </SafeAreaView>

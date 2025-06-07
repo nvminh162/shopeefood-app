@@ -2,16 +2,10 @@ import facebookLogo from '@/assets/auth/facebook.png';
 import googleLogo from '@/assets/auth/google.png';
 import { Image, StyleSheet, View } from "react-native";
 import ShareButton from "./share.button";
-import TextBetweenLine from "./text.between.line";
-
-const styles = StyleSheet.create({
-  welcomeBtn: { flex: 1, gap: 30 }
-});
 
 const SocialButton = () => {
   return (
-    <View style={styles.welcomeBtn}>
-      <TextBetweenLine title="Sign in with" textColor='black' />
+    <View>
       <View
         style={{
           flexDirection: "row",

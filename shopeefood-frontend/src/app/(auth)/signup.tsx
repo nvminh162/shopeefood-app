@@ -1,5 +1,6 @@
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
+import TextBetweenLine from "@/components/button/text.between.line";
 import ShareInput from "@/components/input/share.input";
 import { registerAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
@@ -23,7 +24,7 @@ const SignUpPage = () => {
       if (res.data) {
         router.replace({
           pathname: "/(auth)/verify",
-          params: { email: email } //Send data by navigate
+          params: { email: email }, //Send data by navigate
         });
       } else {
         const m = Array.isArray(res.message) ? res.message[0] : res.message;
@@ -70,7 +71,7 @@ const SignUpPage = () => {
       <ShareButton
         title="Sign Up"
         onPress={handleSignUp}
-        textStyle={{ color: "#fff" }}
+        textStyle={{ color: "#fff", fontSize: 19 }}
         buttonStyle={{
           justifyContent: "center",
           borderRadius: 30,
@@ -99,7 +100,10 @@ const SignUpPage = () => {
           </Text>
         </Link>
       </View>
-      <SocialButton />
+      <View style={{flex: 1, gap: 30}}>
+        <TextBetweenLine title="Sign up with" textColor="black"/>
+        <SocialButton />
+      </View>
     </View>
   );
 };

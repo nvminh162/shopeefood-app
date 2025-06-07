@@ -1,7 +1,6 @@
-
-import facebookLogo from '@/assets/auth/facebook.png';
-import googleLogo from '@/assets/auth/google.png';
-import backgroundAuth from '@/assets/auth/welcome-background.png';
+import facebookLogo from "@/assets/auth/facebook.png";
+import googleLogo from "@/assets/auth/google.png";
+import backgroundAuth from "@/assets/auth/welcome-background.png";
 import ShareButton from "@/components/button/share.button";
 import TextBetweenLine from "@/components/button/text.between.line";
 import { APP_COLOR } from "@/utils/constants";
@@ -28,12 +27,6 @@ const styles = StyleSheet.create({
 });
 
 const WelcomePage = () => {
-  if (true) {
-    return (
-      <Redirect href={"/(auth)/verify"} />
-    )
-  }
-
   return (
     <ImageBackground
       source={backgroundAuth}
@@ -54,7 +47,7 @@ const WelcomePage = () => {
             </Text>
           </View>
           <View style={styles.welcomeBtn}>
-            <TextBetweenLine title="Sign in with" />
+            <TextBetweenLine title="Sign in with"/>
             <View
               style={{
                 flexDirection: "row",

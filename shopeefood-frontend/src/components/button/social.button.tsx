@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 const SocialButton = () => {
   return (
     <View style={styles.welcomeBtn}>
-      <TextBetweenLine title="Sign in with" />
+      <TextBetweenLine title="Sign in with" textColor='black' />
       <View
         style={{
           flexDirection: "row",

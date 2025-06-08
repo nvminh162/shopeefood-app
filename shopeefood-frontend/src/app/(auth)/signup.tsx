@@ -89,7 +89,7 @@ const SignUpPage = () => {
         }}
       >
         <Text>Already have an account?</Text>
-        <Link href={"/(auth)/signup"}>
+        <Link href={"/(auth)/login"}>
           <Text
             style={{
               fontWeight: "700",

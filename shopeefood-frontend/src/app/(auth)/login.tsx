@@ -16,10 +16,13 @@ const styles = StyleSheet.create({
 const Login = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleLogin = async () => {
     try {
+      setIsLoading(true);
       const res = await loginAPI(email, password);
+      setIsLoading(false);
       if (res.data) {
         router.replace({ pathname: "/(tabs)" });
       } else {
@@ -34,10 +37,9 @@ const Login = () => {
         if (res.statusCode === 400) {
           router.replace({
             pathname: "/(auth)/verify",
-            params: { email: email, isLogin: 1 }
-          })
+            params: { email: email, isLogin: 1 },
+          });
         }
-        
       }
     } catch (err) {
       console.log(err);
@@ -98,6 +100,7 @@ const Login = () => {
           paddingVertical: 15,
         }}
         pressStyle={{ alignSelf: "stretch" }}
+        isLoading={isLoading}
       />
       <View
         style={{

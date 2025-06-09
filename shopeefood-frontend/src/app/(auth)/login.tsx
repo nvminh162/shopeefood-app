@@ -1,28 +1,27 @@
+import QuestionButton from "@/components/button/question.button";
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
-import TextBetweenLine from "@/components/button/text.between.line";
 import ShareInput from "@/components/input/share.input";
 import { loginAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
+import { LoginSchema } from "@/utils/validate.schema";
 import { Link, router } from "expo-router";
+import { Formik } from "formik";
 import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Toast from "react-native-root-toast";
 
 const styles = StyleSheet.create({
-  container: { flex: 1, marginHorizontal: 20, gap: 10, marginTop: 30 },
+  container: { flex: 1, marginHorizontal: 20, gap: 10 },
 });
 
 const Login = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const handleLogin = async () => {
+  const handleLogin = async (email: string, password: string) => {
     try {
       setIsLoading(true);
       const res = await loginAPI(email, password);
-      setIsLoading(false);
       if (res.data) {
         router.replace({ pathname: "/(tabs)" });
       } else {
@@ -43,6 +42,8 @@ const Login = () => {
       }
     } catch (err) {
       console.log(err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -59,7 +60,8 @@ const Login = () => {
           Login
         </Text>
       </View>
-      <ShareInput
+
+      {/* <ShareInput
         title="Email"
         keyboardType="email-address"
         value={email}
@@ -71,24 +73,16 @@ const Login = () => {
         value={password}
         setValue={setPassword}
       />
+
       <View
-        style={{
-          marginVertical: 15,
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <Link href={".."}>
-          <Text
-            style={{
-              fontWeight: "700",
-              color: APP_COLOR.ORANGE,
-            }}
-          >
+        style={{ marginVertical: 15, flexDirection: "row", justifyContent: "center" }} >
+        <Link href={"/"}>
+          <Text style={{ fontWeight: "700", color: APP_COLOR.ORANGE }} >
             Forgot password?
           </Text>
         </Link>
       </View>
+
       <ShareButton
         title="Login"
         onPress={handleLogin}
@@ -101,31 +95,66 @@ const Login = () => {
         }}
         pressStyle={{ alignSelf: "stretch" }}
         isLoading={isLoading}
-      />
-      <View
-        style={{
-          marginVertical: 15,
-          flexDirection: "row",
-          justifyContent: "center",
-          gap: 5,
-        }}
+      /> */}
+
+      <Formik
+        validationSchema={LoginSchema}
+        initialValues={{ email: "", password: "" }}
+        onSubmit={(values) => handleLogin(values.email, values.password)}
       >
-        <Text>Don't have an account?</Text>
-        <Link href={"/(auth)/signup"}>
-          <Text
-            style={{
-              fontWeight: "700",
-              textDecorationLine: "underline",
-            }}
-          >
-            Sign up
-          </Text>
-        </Link>
-      </View>
-      <View style={{ flex: 1, gap: 30 }}>
-        <TextBetweenLine title="Sign in with" textColor="black" />
-        <SocialButton />
-      </View>
+        {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
+          <>
+            <ShareInput
+              title="Email"
+              onTextChange={handleChange("email")}
+              onBlur={handleBlur("email")}
+              value={values.email}
+              error={errors.email}
+              keyboardType="email-address"
+            />
+            <ShareInput
+              title="Password"
+              onTextChange={handleChange("password")}
+              onBlur={handleBlur("password")}
+              value={values.password}
+              error={errors.password}
+            />
+            <View
+              style={{
+                marginVertical: 15,
+                flexDirection: "row",
+                justifyContent: "center",
+              }}
+            >
+              <Link href={"/"}>
+                <Text style={{ fontWeight: "700", color: APP_COLOR.ORANGE }}>
+                  Forgot password?
+                </Text>
+              </Link>
+            </View>
+            <ShareButton
+              title="Login"
+              onPress={handleSubmit}
+              textStyle={{ color: "#fff", fontSize: 19 }}
+              buttonStyle={{
+                justifyContent: "center",
+                borderRadius: 30,
+                backgroundColor: APP_COLOR.ORANGE,
+                paddingVertical: 15,
+              }}
+              pressStyle={{ alignSelf: "stretch" }}
+              isLoading={isLoading}
+            />
+          </>
+        )}
+      </Formik>
+
+      <QuestionButton
+        questionText="Don't have an account?"
+        questionBtnName="Sign up"
+        path="/(auth)/signup"
+      />
+      <SocialButton title="Sign in with" textColor="black" />
     </View>
   );
 };

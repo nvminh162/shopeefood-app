@@ -47,7 +47,6 @@ const VerifyPage = () => {
       } else {
         router.replace("/(auth)/login");
       }
-
     } else {
       Toast.show(res.message as string, {
         duration: Toast.durations.LONG,
@@ -82,7 +81,7 @@ const VerifyPage = () => {
       <View style={styles.container}>
         <Text style={styles.heading}>Verify account</Text>
         <Text style={{ marginVertical: 10 }}>
-          Please enter the confirmation code to email
+          Please enter the confirmation code to email: {email}
         </Text>
         <View style={{ marginVertical: 20 }}>
           <OTPTextView

@@ -1,30 +1,30 @@
 import facebookLogo from "@/assets/auth/facebook.png";
 import googleLogo from "@/assets/auth/google.png";
 import backgroundAuth from "@/assets/auth/welcome-background.png";
+import QuestionButton from "@/components/button/question.button";
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
-import TextBetweenLine from "@/components/button/text.between.line";
 import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
-import { Link, Redirect, router } from "expo-router";
-import { Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import { Link, router } from "expo-router";
+import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 10,
   },
-  welcomeText: {
+  welcomeHeadingWrapper: {
     flex: 0.6,
     alignItems: "flex-start",
     justifyContent: "center",
     paddingLeft: 20,
     fontWeight: "bold",
   },
-  welcomeBtn: { flex: 0.4, gap: 30 },
-  heading: { fontSize: 40, fontWeight: "600" },
-  body: { fontSize: 30, color: APP_COLOR.ORANGE, marginVertical: 10 },
-  footer: { fontWeight: "600" },
+  welcomeText: { fontSize: 40, fontWeight: "600" },
+  brandName: { fontSize: 30, color: APP_COLOR.ORANGE, marginVertical: 10 },
+  slogan: { fontWeight: "600" },
+  welcomeButtonWrapper: { flex: 0.4, gap: 15 },
 });
 
 const WelcomePage = () => {
@@ -40,16 +40,15 @@ const WelcomePage = () => {
         locations={[0.5, 0.8]}
       >
         <View style={styles.container}>
-          <View style={styles.welcomeText}>
-            <Text style={styles.heading}>Welcome to</Text>
-            <Text style={styles.body}>ShopeeFood</Text>
-            <Text style={styles.footer}>
+          <View style={styles.welcomeHeadingWrapper}>
+            <Text style={styles.welcomeText}>Welcome to</Text>
+            <Text style={styles.brandName}>ShopeeFood</Text>
+            <Text style={styles.slogan}>
               Your favourite foods delivered fast at your door.
             </Text>
           </View>
-          <View style={styles.welcomeBtn}>
-            <TextBetweenLine title="Sign in with" />
-            <SocialButton />
+          <View style={styles.welcomeButtonWrapper}>
+            <SocialButton title="Sign in with" />
             <ShareButton
               title="Login with Email"
               onPress={() => router.navigate("/(auth)/login")}
@@ -65,27 +64,12 @@ const WelcomePage = () => {
               }}
               pressStyle={{ alignSelf: "stretch" }}
             />
-            <View
-              style={{
-                flex: 1,
-                flexDirection: "row",
-                justifyContent: "center",
-                gap: 5,
-              }}
-            >
-              <Text style={{ color: "white" }}>Don't have an account?</Text>
-              <Link href={"/(auth)/signup"}>
-                <Text
-                  style={{
-                    fontWeight: "700",
-                    textDecorationLine: "underline",
-                    color: "white",
-                  }}
-                >
-                  Sign Up
-                </Text>
-              </Link>
-            </View>
+            <QuestionButton
+              questionText="Don't have an account?"
+              questionBtnName="Sign Up"
+              path="/(auth)/signup"
+              textColor="white"
+            />
           </View>
         </View>
       </LinearGradient>

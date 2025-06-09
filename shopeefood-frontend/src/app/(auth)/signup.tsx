@@ -1,26 +1,31 @@
+import QuestionButton from "@/components/button/question.button";
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
-import TextBetweenLine from "@/components/button/text.between.line";
 import ShareInput from "@/components/input/share.input";
 import { registerAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
 import { Link, router } from "expo-router";
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 import Toast from "react-native-root-toast";
+import { Formik } from "formik";
+import { RegisterSchema } from "@/utils/validate.schema";
 
 const styles = StyleSheet.create({
   container: { flex: 1, marginHorizontal: 20, gap: 10 },
 });
 
 const SignUpPage = () => {
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const handleSignUp = async () => {
+  const handleSignUp = async (
+    fullName: string,
+    email: string,
+    password: string
+  ) => {
     try {
-      const res = await registerAPI(name, email, password);
+      setIsLoading(true);
+      const res = await registerAPI(fullName, email, password);
       if (res.data) {
         router.replace({
           pathname: "/(auth)/verify",
@@ -37,6 +42,8 @@ const SignUpPage = () => {
       }
     } catch (err) {
       console.log(err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -53,7 +60,9 @@ const SignUpPage = () => {
           Register Now
         </Text>
       </View>
-      <ShareInput title="Fullname" value={name} setValue={setName} />
+
+      {/* Method 1: Controlled component */}
+      {/* <ShareInput title="Fullname" value={name} setValue={setName} />
       <ShareInput
         title="Email"
         keyboardType="email-address"
@@ -66,8 +75,6 @@ const SignUpPage = () => {
         value={password}
         setValue={setPassword}
       />
-      <View style={{ marginVertical: 10 }} />
-      {/* Spacing between input and button */}
       <ShareButton
         title="Sign Up"
         onPress={handleSignUp}
@@ -79,31 +86,64 @@ const SignUpPage = () => {
           paddingVertical: 15,
         }}
         pressStyle={{ alignSelf: "stretch" }}
-      />
-      <View
-        style={{
-          marginVertical: 15,
-          flexDirection: "row",
-          justifyContent: "center",
-          gap: 5,
-        }}
+      /> */}
+
+      {/* Method 2: uncontrolled component (Formik) */}
+      <Formik
+        validationSchema={RegisterSchema}
+        initialValues={{ fullName: "", email: "", password: "" }}
+        onSubmit={(values) =>
+          handleSignUp(values.fullName, values.email, values.password)
+        }
       >
-        <Text>Already have an account?</Text>
-        <Link href={"/(auth)/login"}>
-          <Text
-            style={{
-              fontWeight: "700",
-              textDecorationLine: "underline",
-            }}
-          >
-            Sign in
-          </Text>
-        </Link>
-      </View>
-      <View style={{flex: 1, gap: 30}}>
-        <TextBetweenLine title="Sign up with" textColor="black"/>
-        <SocialButton />
-      </View>
+        {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
+          <>
+            <ShareInput
+              title="Fullname"
+              onTextChange={handleChange("fullName")}
+              onBlur={handleBlur("fullName")}
+              value={values.fullName}
+              error={errors.fullName}
+            />
+            <ShareInput
+              title="Email"
+              onTextChange={handleChange("email")}
+              onBlur={handleBlur("email")}
+              value={values.email}
+              error={errors.email}
+              keyboardType="email-address"
+            />
+            <ShareInput
+              title="Password"
+              onTextChange={handleChange("password")}
+              onBlur={handleBlur("password")}
+              value={values.password}
+              error={errors.password}
+            />
+            <View style={{ marginVertical: 5 }} />
+            <ShareButton
+              title="Sign Up"
+              onPress={handleSubmit}
+              textStyle={{ color: "#fff", fontSize: 19 }}
+              buttonStyle={{
+                justifyContent: "center",
+                borderRadius: 30,
+                backgroundColor: APP_COLOR.ORANGE,
+                paddingVertical: 15,
+              }}
+              pressStyle={{ alignSelf: "stretch" }}
+              isLoading={isLoading}
+            />
+          </>
+        )}
+      </Formik>
+
+      <QuestionButton
+        questionText="Already have an account?"
+        questionBtnName="Sign in"
+        path="/(auth)/login"
+      />
+      <SocialButton title="Sign up with" textColor="black" />
     </View>
   );
 };

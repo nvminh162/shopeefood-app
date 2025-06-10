@@ -8,7 +8,7 @@ const HEADER_MAX_HEIGHT = 100; //distance from HeaderHome to Body
 
 const HomeTab = () => {
   const scrollY = useRef(new Animated.Value(0)).current;
-  const [searchValue, setSearchValue] = useState("Rau Má Mix Mùa 1 Tầng 1");
+  const [searchValue, setSearchValue] = useState("@nvminh162 got the bang no cap");
 
   return (
     <View style={styles.container}>
@@ -30,6 +30,9 @@ const HomeTab = () => {
       >
         <BannerHome />
         <TopList />
+        <TopList />
+        <TopList />
+        <TopList />
       </Animated.ScrollView>
     </View>
   );
@@ -38,11 +41,9 @@ const HomeTab = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
   },
   scrollViewContent: {
     paddingTop: HEADER_MAX_HEIGHT + 10,
-    backgroundColor: "#f5f5f5",
   },
 });
 

@@ -30,8 +30,6 @@ const HomeTab = () => {
       >
         <BannerHome />
         <TopList />
-        <TopList />
-        <TopList />
       </Animated.ScrollView>
     </View>
   );

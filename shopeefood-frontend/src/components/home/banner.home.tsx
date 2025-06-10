@@ -9,10 +9,12 @@ import Carousel, {
 import banner1 from "@/assets/banner/banner1.jpg";
 import banner2 from "@/assets/banner/banner2.jpg";
 import banner3 from "@/assets/banner/banner3.jpg";
+import { APP_COLOR } from "@/utils/constants";
 
 const BannerHome = () => {
   const ref = React.useRef<ICarouselInstance>(null);
   const progress = useSharedValue<number>(0);
+
   const data = [
     { id: 1, source: banner1 },
     { id: 2, source: banner2 },
@@ -35,7 +37,7 @@ const BannerHome = () => {
         height={width / 4} //customize height
         data={data}
         onProgressChange={progress}
-        renderItem={({ item, index }) => (
+        renderItem={({ item }) => (
           <Image
             style={{
               width: width,
@@ -46,11 +48,18 @@ const BannerHome = () => {
           />
         )}
       />
-
       <Pagination.Basic
         progress={progress}
         data={data}
-        dotStyle={{ backgroundColor: "rgba(0,0,0,0.2)", borderRadius: 50 }}
+        dotStyle={{
+          backgroundColor: APP_COLOR.GREY,
+          borderRadius: 50,
+          width: 6,
+          height: 6,
+        }}
+        activeDotStyle={{
+          backgroundColor: APP_COLOR.ORANGE,
+        }}
         containerStyle={{ gap: 5, marginTop: 10 }}
         onPress={onPressPagination}
       />

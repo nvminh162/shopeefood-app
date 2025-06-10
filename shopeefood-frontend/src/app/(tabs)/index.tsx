@@ -4,6 +4,7 @@ import HeaderHome from "@/components/home/header.home";
 import TopList from "@/components/home/top.list";
 import BannerHome from "@/components/home/banner.home";
 import CollectionHome from "@/components/home/collection.home";
+import { APP_COLOR } from "@/utils/constants";
 
 const HEADER_MAX_HEIGHT = 100; //distance from HeaderHome to Body
 

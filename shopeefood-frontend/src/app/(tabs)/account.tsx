@@ -1,4 +1,5 @@
-import { Text, View } from "react-native";
+import { APP_COLOR } from "@/utils/constants";
+import { StatusBar, Text, View } from "react-native";
 
 const AccountTab = () => {
   return (

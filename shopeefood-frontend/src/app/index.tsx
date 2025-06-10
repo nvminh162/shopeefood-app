@@ -6,7 +6,7 @@ import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
 import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
-import { Link, router } from "expo-router";
+import { Link, Redirect, router } from "expo-router";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const styles = StyleSheet.create({
@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
 });
 
 const WelcomePage = () => {
+  if (true) {
+    return <Redirect href={"/(tabs)"}/>;
+  }
+
   return (
     <ImageBackground
       source={backgroundAuth}

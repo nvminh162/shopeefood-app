@@ -1,24 +1,51 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { useState, useRef } from "react";
+import { View, StyleSheet, Animated } from "react-native";
+import HeaderHome from "@/components/home/header.home";
+import TopList from "@/components/home/top.list";
+import BannerHome from "@/components/home/banner.home";
+
+const HEADER_MAX_HEIGHT = 100; //distance from HeaderHome to Body
 
 const HomeTab = () => {
+  const scrollY = useRef(new Animated.Value(0)).current;
+  const [searchValue, setSearchValue] = useState("Rau Má Mix Mùa 1 Tầng 1");
+
   return (
-    <View>
-      <Text>HomeTab</Text>
-      <Link
-        style={{ padding: 10, backgroundColor: "red", marginTop: 5 }}
-        href={"/product"}
+    <View style={styles.container}>
+      {/* Sticky Header */}
+      <HeaderHome
+        scrollY={scrollY}
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+      />
+
+      {/* Home Body */}
+      <Animated.ScrollView
+        contentContainerStyle={styles.scrollViewContent}
+        scrollEventThrottle={16}
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+          { useNativeDriver: false }
+        )}
       >
-        Go to product
-      </Link>
-      <Link
-        style={{ padding: 10, backgroundColor: "red", marginTop: 5 }}
-        href={"/login"}
-      >
-        Go to login
-      </Link>
+        <BannerHome />
+        <TopList />
+        <TopList />
+        <TopList />
+      </Animated.ScrollView>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+  },
+  scrollViewContent: {
+    paddingTop: HEADER_MAX_HEIGHT + 10,
+    backgroundColor: "#f5f5f5",
+  },
+});
 
 export default HomeTab;

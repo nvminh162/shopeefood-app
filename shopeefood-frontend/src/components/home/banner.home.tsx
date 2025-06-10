@@ -1,50 +1,52 @@
 import * as React from "react";
-import { Dimensions, Text, View } from "react-native";
+import { Dimensions, Image, Text, View } from "react-native";
 import { useSharedValue } from "react-native-reanimated";
 import Carousel, {
   ICarouselInstance,
   Pagination,
 } from "react-native-reanimated-carousel";
- 
-const data = [...new Array(6).keys()];
-const width = Dimensions.get("window").width;
- 
+
+import banner1 from "@/assets/banner/banner1.jpg";
+import banner2 from "@/assets/banner/banner2.jpg";
+import banner3 from "@/assets/banner/banner3.jpg";
+
 const BannerHome = () => {
   const ref = React.useRef<ICarouselInstance>(null);
   const progress = useSharedValue<number>(0);
-  
+  const data = [
+    { id: 1, source: banner1 },
+    { id: 2, source: banner2 },
+    { id: 3, source: banner3 },
+  ];
+  const width = Dimensions.get("window").width;
+
   const onPressPagination = (index: number) => {
     ref.current?.scrollTo({
-      /**
-       * Calculate the difference between the current index and the target index
-       * to ensure that the carousel scrolls to the nearest index
-       */
       count: index - progress.value,
       animated: true,
     });
   };
- 
+
   return (
     <View style={{ flex: 1 }}>
       <Carousel
         ref={ref}
         width={width}
-        height={width / 2}
+        height={width / 4} //customize height
         data={data}
         onProgressChange={progress}
-        renderItem={({ index }) => (
-          <View
+        renderItem={({ item, index }) => (
+          <Image
             style={{
-              flex: 1,
-              borderWidth: 1,
-              justifyContent: "center",
+              width: width,
+              height: width / 3.7,
+              resizeMode: "cover",
             }}
-          >
-            <Text style={{ textAlign: "center", fontSize: 30 }}>{index}</Text>
-          </View>
+            source={item.source}
+          />
         )}
       />
- 
+
       <Pagination.Basic
         progress={progress}
         data={data}
@@ -54,6 +56,6 @@ const BannerHome = () => {
       />
     </View>
   );
-}
- 
+};
+
 export default BannerHome;

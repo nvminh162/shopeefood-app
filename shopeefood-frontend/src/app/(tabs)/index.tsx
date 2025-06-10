@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { View, StyleSheet, Animated } from "react-native";
+import { View, StyleSheet, Animated, StatusBar } from "react-native";
 import HeaderHome from "@/components/home/header.home";
 import TopList from "@/components/home/top.list";
 import BannerHome from "@/components/home/banner.home";

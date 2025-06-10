@@ -1,11 +1,11 @@
 import { Text, View } from "react-native";
 
-const SettingTab = () => {
+const LikeTab = () => {
   return (
     <View>
-      <Text>SettingTab</Text>
+      <Text>LikeTab</Text>
     </View>
   );
 };
 
-export default SettingTab;
+export default LikeTab;

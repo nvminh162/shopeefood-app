@@ -8,6 +8,7 @@ import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
 import { Link, Redirect, router } from "expo-router";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
 });
 
 const WelcomePage = () => {
-  if (true) return <Redirect href={"/(tabs)"}/>;
+  // if (true) return <Redirect href={"/(tabs)"}/>;
 
   return (
     <ImageBackground

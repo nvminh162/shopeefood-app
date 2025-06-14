@@ -8,7 +8,10 @@ import { APP_COLOR } from "@/utils/constants";
 import { LinearGradient } from "expo-linear-gradient";
 import { Link, Redirect, router } from "expo-router";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useEffect } from "react";
+import { getAccountAPI } from "@/utils/api";
+import { useCurrentApp } from "@/context/app.context";
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +32,23 @@ const styles = StyleSheet.create({
 });
 
 const WelcomePage = () => {
+  const { setAppState } = useCurrentApp();
+
   // if (true) return <Redirect href={"/(tabs)"}/>;
+
+  useEffect(() => {
+    const fetchAccount = async () => {
+      const res = await getAccountAPI();
+      if (res.data) {
+        setAppState({
+          user: res.data.user,
+          access_token: await AsyncStorage.getItem("access_token"),
+        });
+        router.replace("/(tabs)");
+      }
+    };
+    fetchAccount();
+  }, []);
 
   return (
     <ImageBackground

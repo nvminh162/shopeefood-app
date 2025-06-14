@@ -1,10 +1,12 @@
-import { APP_COLOR } from "@/utils/constants";
-import { StatusBar, Text, View } from "react-native";
+import { useCurrentTheme } from "@/context/app.context";
+import { Text, View } from "react-native";
 
 const AccountTab = () => {
+  const { theme } = useCurrentTheme()
+
   return (
     <View>
-      <Text>AccountTab</Text>
+      <Text>{theme}</Text>
     </View>
   );
 };

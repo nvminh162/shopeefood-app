@@ -1,4 +1,4 @@
-import { Background } from "@react-navigation/elements";
+import AppProvider from "context/app.context";
 import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
@@ -19,40 +19,43 @@ const RootLayout = () => {
       {/* GestureHandlerRootView: Carousel */}
       <RootSiblingParent>
         {/* RootSiblingParent: Display message */}
-        <SafeAreaView style={{ flex: 1 }}>
-          <ThemeProvider value={navTheme}>
-            <Stack
-              screenOptions={{
-                headerStyle: {
-                  backgroundColor: "#f4511e",
-                },
-                headerTintColor: "#fff",
-                headerTitleStyle: {
-                  fontWeight: "bold",
-                },
-              }}
-            >
-              <Stack.Screen name="index" options={{ headerShown: false }} />
-              <Stack.Screen
-                name="(auth)/signup"
-                options={{ headerShown: false }}
-              />
-              <Stack.Screen
-                name="(auth)/verify"
-                options={{ headerShown: false }}
-              />
-              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-              <Stack.Screen
-                name="product/index"
-                options={{ headerTitle: "Sản phẩm" }}
-              />
-              <Stack.Screen
-                name="(auth)/login"
-                options={{ headerTitle: "Đăng nhập", headerShown: false }}
-              />
-            </Stack>
-          </ThemeProvider>
-        </SafeAreaView>
+        <AppProvider>
+          {/* Context App */}
+          <SafeAreaView style={{ flex: 1 }}>
+            <ThemeProvider value={navTheme}>
+              <Stack
+                screenOptions={{
+                  headerStyle: {
+                    backgroundColor: "#f4511e",
+                  },
+                  headerTintColor: "#fff",
+                  headerTitleStyle: {
+                    fontWeight: "bold",
+                  },
+                }}
+              >
+                <Stack.Screen name="index" options={{ headerShown: false }} />
+                <Stack.Screen
+                  name="(auth)/signup"
+                  options={{ headerShown: false }}
+                />
+                <Stack.Screen
+                  name="(auth)/verify"
+                  options={{ headerShown: false }}
+                />
+                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                <Stack.Screen
+                  name="product/index"
+                  options={{ headerTitle: "Sản phẩm" }}
+                />
+                <Stack.Screen
+                  name="(auth)/login"
+                  options={{ headerTitle: "Đăng nhập", headerShown: false }}
+                />
+              </Stack>
+            </ThemeProvider>
+          </SafeAreaView>
+        </AppProvider>
       </RootSiblingParent>
     </GestureHandlerRootView>
   );

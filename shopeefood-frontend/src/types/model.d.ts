@@ -1,4 +1,4 @@
-export { };
+export {};
 
 declare global {
   interface IBackendRes<T> {
@@ -10,5 +10,18 @@ declare global {
 
   interface IRegister {
     _id: string;
+  }
+
+  interface IUserLogin {
+    user: {
+      email: string;
+      _id: string;
+      name: string;
+      role: string;
+      phone: string;
+      address: any;
+      avatar: string;
+    };
+    access_token: string;
   }
 }

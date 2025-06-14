@@ -2,6 +2,7 @@ import QuestionButton from "@/components/button/question.button";
 import ShareButton from "@/components/button/share.button";
 import SocialButton from "@/components/button/social.button";
 import ShareInput from "@/components/input/share.input";
+import { useCurrentApp } from "@/context/app.context";
 import { loginAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
 import { LoginSchema } from "@/utils/validate.schema";
@@ -17,12 +18,14 @@ const styles = StyleSheet.create({
 
 const Login = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const { setAppState } = useCurrentApp();
 
   const handleLogin = async (email: string, password: string) => {
     try {
       setIsLoading(true);
       const res = await loginAPI(email, password);
       if (res.data) {
+        setAppState(res.data);
         router.replace({ pathname: "/(tabs)" });
       } else {
         const m = Array.isArray(res.message) ? res.message[0] : res.message;

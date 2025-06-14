@@ -26,7 +26,7 @@ export const resendCodeAPI = (email: string) => {
 
 export const loginAPI = (email: string, password: string) => {
   const url = `/api/v1/auth/login`;
-  return instance.post<IBackendRes<IRegister>>(url, {
+  return instance.post<IBackendRes<IUserLogin>>(url, {
     username: email,
     password,
   });

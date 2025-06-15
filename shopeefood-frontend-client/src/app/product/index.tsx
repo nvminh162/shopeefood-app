@@ -1,9 +1,10 @@
-import { Text, View } from "react-native";
+import RMain from "@/components/restaurant/main";
+import { View } from "react-native";
 
 const Product = () => {
   return (
     <View>
-      <Text>Product Screen</Text>
+      <RMain />
     </View>
   );
 };

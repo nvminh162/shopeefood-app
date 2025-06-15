@@ -5,12 +5,14 @@ import {
   Image,
   FlatList,
   Platform,
+  Pressable,
 } from "react-native";
 import demoImg from "@/assets/product/demo.jpg";
 import { APP_COLOR } from "@/utils/constants";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { useEffect, useState } from "react";
 import { getTopRestaurantAPI } from "@/utils/api";
+import { router } from "expo-router";
 
 interface IProps {
   name: string;
@@ -85,24 +87,26 @@ const CollectionHome = (props: IProps) => {
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => {
             return (
-              <View style={{ backgroundColor: "#efefef" }}>
-                <Image
-                  style={{ height: 130, width: 130 }}
-                  source={{ uri: `${baseImage}/${item.image}` }}
-                />
-                <View style={{ padding: 5 }}>
-                  <Text
-                    numberOfLines={1}
-                    ellipsizeMode="tail"
-                    style={{ fontWeight: "bold", maxWidth: 130 }}
-                  >
-                    {item.name}
-                  </Text>
-                  <View style={styles.sale}>
-                    <Text style={{ color: APP_COLOR.ORANGE }}>Flash Sale</Text>
+              <Pressable onPress={() => router.navigate("/product")}>
+                <View style={{ backgroundColor: "#efefef" }}>
+                  <Image
+                    style={{ height: 130, width: 130 }}
+                    source={{ uri: `${baseImage}/${item.image}` }}
+                  />
+                  <View style={{ padding: 5 }}>
+                    <Text
+                      numberOfLines={1}
+                      ellipsizeMode="tail"
+                      style={{ fontWeight: "bold", maxWidth: 130 }}
+                    >
+                      {item.name}
+                    </Text>
+                    <View style={styles.sale}>
+                      <Text style={{ color: APP_COLOR.ORANGE }}>Flash Sale</Text>
+                    </View>
                   </View>
                 </View>
-              </View>
+              </Pressable>
             );
           }}
         />

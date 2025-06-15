@@ -273,7 +273,7 @@ const RMain = () => {
                 onScroll={onScroll}
                 stickySectionHeadersEnabled={false}
                 contentContainerStyle={{
-                    paddingTop: IMAGE_HEIGHT + INFO_HEIGHT + SLIDE_MENU_HEIGHT,
+                    paddingTop: IMAGE_HEIGHT + INFO_HEIGHT + SLIDE_MENU_HEIGHT - 2,
                     paddingBottom: 30,
                 }}
                 sections={DATA}

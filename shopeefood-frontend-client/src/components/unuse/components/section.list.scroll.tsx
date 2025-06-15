@@ -1,4 +1,4 @@
-import { APP_COLOR } from "@/utils/constant";
+import { APP_COLOR } from "@/utils/constants";
 import { useRef, useState } from "react";
 import { Button, FlatList, SectionList, StatusBar, StyleSheet, Text, TouchableOpacity, View, ViewToken } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";

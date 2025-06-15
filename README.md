@@ -2,7 +2,7 @@
 
 @nvminh162
 
-# ShopeeFood Mobile Application
+# ShopeeFood Mobile Application - FullStack
 
 ## Overview
 
@@ -31,7 +31,7 @@ This is a mobile application built with React Native, designed to replicate the 
 - TypeScript
 - React Navigation
 
-### Backend (Planned)
+### Backend
 
 - Node.js
 - Express
@@ -46,23 +46,6 @@ This is a mobile application built with React Native, designed to replicate the 
 - npm or yarn
 - Expo CLI
 - Android Studio or Xcode (for mobile development)
-
-### Setting up the Frontend
-
-```bash
-# Navigate to the frontend directory
-cd shopeefood-frontend
-
-# Install dependencies
-npm install
-# or
-yarn install
-
-# Start the development server
-npm start
-# or
-yarn start
-```
 
 ## Development Status
 

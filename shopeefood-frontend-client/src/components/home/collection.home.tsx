@@ -1,11 +1,21 @@
-import { View, Text, StyleSheet, Image, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  FlatList,
+  Platform,
+} from "react-native";
 import demoImg from "@/assets/product/demo.jpg";
 import { APP_COLOR } from "@/utils/constants";
-import AntDesign from '@expo/vector-icons/AntDesign';
+import AntDesign from "@expo/vector-icons/AntDesign";
+import { useEffect, useState } from "react";
+import { getTopRestaurantAPI } from "@/utils/api";
 
 interface IProps {
   name: string;
   description: string;
+  refAPI: string;
 }
 
 const styles = StyleSheet.create({
@@ -23,14 +33,26 @@ const styles = StyleSheet.create({
 });
 
 const CollectionHome = (props: IProps) => {
-  const { name, description } = props;
-  const data = [
-    { key: 1, image: demoImg, name: "Cửa hàng 1" },
-    { key: 2, image: demoImg, name: "Cửa hàng 2" },
-    { key: 3, image: demoImg, name: "Cửa hàng 3" },
-    { key: 4, image: demoImg, name: "Cửa hàng 4" },
-    { key: 5, image: demoImg, name: "Cửa hàng 5" },
-  ];
+  const { name, description, refAPI } = props;
+  const [restaurant, setRestaurant] = useState<ITopRestaurant[] | []>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await getTopRestaurantAPI(refAPI);
+      if (res.data) {
+        setRestaurant(res.data);
+      } else {
+        //error
+      }
+    };
+    fetchData();
+  }, [refAPI]);
+
+  const backend =
+    Platform.OS === "android"
+      ? process.env.EXPO_PUBLIC_ANDROID_API_URL
+      : process.env.EXPO_PUBLIC_IOS_API_URL;
+  const baseImage = `${backend}/images/restaurant`;
 
   return (
     <>
@@ -44,14 +66,19 @@ const CollectionHome = (props: IProps) => {
           </Text>
           <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
             <Text style={{ color: "#5a5a5a" }}>See all</Text>
-            <AntDesign style={{ color: "#5a5a5a" }} name="right" size={15} color="black" />
+            <AntDesign
+              style={{ color: "#5a5a5a" }}
+              name="right"
+              size={15}
+              color="black"
+            />
           </View>
         </View>
         <View style={{ marginBottom: 10 }}>
           <Text style={{ color: "#5a5a5a" }}>{description}</Text>
         </View>
         <FlatList
-          data={data}
+          data={restaurant}
           horizontal
           contentContainerStyle={{ gap: 5 }}
           showsHorizontalScrollIndicator={false}
@@ -61,10 +88,16 @@ const CollectionHome = (props: IProps) => {
               <View style={{ backgroundColor: "#efefef" }}>
                 <Image
                   style={{ height: 130, width: 130 }}
-                  source={item.image}
+                  source={{ uri: `${baseImage}/${item.image}` }}
                 />
                 <View style={{ padding: 5 }}>
-                  <Text style={{ fontWeight: "bold" }}>{item.name}</Text>
+                  <Text
+                    numberOfLines={1}
+                    ellipsizeMode="tail"
+                    style={{ fontWeight: "bold", maxWidth: 130 }}
+                  >
+                    {item.name}
+                  </Text>
                   <View style={styles.sale}>
                     <Text style={{ color: APP_COLOR.ORANGE }}>Flash Sale</Text>
                   </View>

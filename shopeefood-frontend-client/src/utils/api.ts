@@ -38,6 +38,11 @@ export const getAccountAPI = () => {
   return instance.get<IBackendRes<IUserLogin>>(url);
 };
 
+export const getTopRestaurantAPI = (ref: string) => {
+  const url = `/api/v1/restaurants/${ref}`;
+  return instance.post<IBackendRes<ITopRestaurant[]>>(url);
+};
+
 export const printAsyncStorage = () => {
   AsyncStorage.getAllKeys((err, keys) => {
     AsyncStorage.multiGet(keys!, (error, stores) => {

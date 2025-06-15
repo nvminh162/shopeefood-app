@@ -1,5 +1,6 @@
-# @nvminh162 -------
+# @nvminh162
 
+## Admin account sample
 ```
 admin@gmail.com
 123456

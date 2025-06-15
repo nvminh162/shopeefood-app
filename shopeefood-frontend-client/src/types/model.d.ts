@@ -24,4 +24,17 @@ declare global {
     };
     access_token: string;
   }
+
+  interface ITopRestaurant {
+    _id: string;
+    name: string;
+    phone: string;
+    address: string;
+    email: string;
+    rating: number;
+    image: string;
+    isActive: true;
+    createdAt: Date;
+    updatedAt: Date;
+  }
 }

@@ -8,9 +8,24 @@ import CollectionHome from "@/components/home/collection.home";
 const HEADER_MAX_HEIGHT = 110; //distance from HeaderHome to Body
 
 const data = [
-  { key: 1, name: "Top Quán Rating 5 sao tuần này", description: "Gợi ý quán được tín đồ ẩm thực đánh giá 5 sao", ref: "" },
-  { key: 2, name: "Quán Mới Lên Sàn", description: "Khám phá ngay loạt quán mới cực ngon", ref: "" },
-  { key: 3, name: "Ăn Thỏa Thích, Freeship 0Đ", description: "Bánh ngọt, chân gà, bánh tráng trộn được Freeship", ref: "" },
+  {
+    key: 1,
+    name: "Top Quán Rating 5 sao tuần này",
+    description: "Gợi ý quán được tín đồ ẩm thực đánh giá 5 sao",
+    refAPI: "top-rating",
+  },
+  {
+    key: 2,
+    name: "Quán Mới Lên Sàn",
+    description: "Khám phá ngay loạt quán mới cực ngon",
+    refAPI: "newcomer",
+  },
+  {
+    key: 3,
+    name: "Ăn Thỏa Thích, Freeship 0Đ",
+    description: "Bánh ngọt, chân gà, bánh tráng trộn được Freeship",
+    refAPI: "top-freeship",
+  },
 ];
 
 const HomeTab = () => {
@@ -40,7 +55,12 @@ const HomeTab = () => {
         <BannerHome />
         <TopList />
         {data.map((item) => (
-          <CollectionHome key={item.key} name={item.name} description={item.description} />
+          <CollectionHome
+            key={item.key}
+            name={item.name}
+            description={item.description}
+            refAPI={item.refAPI}
+          />
         ))}
       </Animated.ScrollView>
     </View>

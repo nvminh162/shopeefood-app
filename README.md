@@ -11,7 +11,7 @@ This is a mobile application built with React Native, designed to replicate the 
 ## Project Structure
 
 - **Frontend**: React Native application with Expo
-- **Backend**: (In development)
+- **Backend**: (Completed)
 
 ## Features (Planned)
 

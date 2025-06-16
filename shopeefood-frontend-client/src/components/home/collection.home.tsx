@@ -87,7 +87,14 @@ const CollectionHome = (props: IProps) => {
           showsVerticalScrollIndicator={false}
           renderItem={({ item }) => {
             return (
-              <Pressable onPress={() => router.navigate("/product")}>
+              <Pressable
+                onPress={() =>
+                  router.navigate({
+                    pathname: "/product/[id]",
+                    params: { id: item._id },
+                  })
+                }
+              >
                 <View style={{ backgroundColor: "#efefef" }}>
                   <Image
                     style={{ height: 130, width: 130 }}
@@ -102,7 +109,9 @@ const CollectionHome = (props: IProps) => {
                       {item.name}
                     </Text>
                     <View style={styles.sale}>
-                      <Text style={{ color: APP_COLOR.ORANGE }}>Flash Sale</Text>
+                      <Text style={{ color: APP_COLOR.ORANGE }}>
+                        Flash Sale
+                      </Text>
                     </View>
                   </View>
                 </View>

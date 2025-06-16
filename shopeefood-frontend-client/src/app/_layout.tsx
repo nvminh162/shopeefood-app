@@ -3,7 +3,6 @@ import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { RootSiblingParent } from "react-native-root-siblings";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const RootLayout = () => {
   const navTheme = {
@@ -49,7 +48,7 @@ const RootLayout = () => {
                 />
                 <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
                 <Stack.Screen
-                  name="product/index"
+                  name="product/[id]"
                   options={{ headerShown: false }}
                 />
                 <Stack.Screen

@@ -17,7 +17,7 @@ instance.interceptors.request.use(
     // Do something before request is sent
     // config.headers["delay"] = 0
     const access_token = await AsyncStorage.getItem("access_token");
-    console.log('>>> access_token:', access_token);
+    // console.log('>>> access_token:', access_token);
     config.headers["Authorization"] = `Bearer ${access_token}`;
     return config;
   },

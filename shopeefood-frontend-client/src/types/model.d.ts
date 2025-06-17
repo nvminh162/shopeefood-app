@@ -86,6 +86,9 @@ declare global {
         [key: string]: {
           quantity: number;
           data: IMenuItem;
+          extra?: {
+            [key: string]: number;
+          };
         };
       };
     };
@@ -98,8 +101,10 @@ declare global {
       items: {
         "product-1-id": {
           quantity: 2,
-          data: {
-
+          data: {},
+          extra: {
+            "size L": 1,
+            "size M": 2,
           }
         }
       }

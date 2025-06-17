@@ -24,6 +24,7 @@ import { useRef, useState } from "react";
 import { getURLBaseBackend, processDataRestaurantMenu } from "@/utils/api";
 import ItemQuantity from "./order/item.quantity";
 import StickyFooter from "./order/sticky.footer";
+import { useCurrentApp } from "@/context/app.context";
 
 const AnimatedSectionList = Animated.createAnimatedComponent(SectionList);
 
@@ -34,15 +35,10 @@ const IMAGE_HEIGHT = 220;
 const INFO_HEIGHT = 250;
 const SLIDE_MENU_HEIGHT = 50;
 
-interface IProps {
-  restaurant: IRestaurant | null;
-}
-
-const RMain = (props: IProps) => {
-  const { restaurant } = props;
+const RMain = () => {
+  const { restaurant } = useCurrentApp();
 
   const scrollY = useSharedValue(0);
-
   const sectionListRef = useRef<SectionList>(null);
   const flatListRef = useRef<FlatList>(null);
   const [activeMenuIndex, setActiveMenuIndex] = useState<number | string>(0);
@@ -323,7 +319,7 @@ const RMain = (props: IProps) => {
         sections={processDataRestaurantMenu(restaurant)}
         renderItem={({ item, index }: { item: any; index: any }) => {
           const menuItem = item as IMenuItem;
-          return <ItemQuantity menuItem={menuItem} restaurant={restaurant} />;
+          return <ItemQuantity menuItem={menuItem} restaurant={restaurant} isModal={false} />;
         }}
         renderSectionHeader={({ section }: { section: any }) => (
           <View

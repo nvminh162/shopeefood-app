@@ -105,7 +105,7 @@ const RootLayout = () => {
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      Background: "transparent",
+      Background: "white",
     },
   };
 

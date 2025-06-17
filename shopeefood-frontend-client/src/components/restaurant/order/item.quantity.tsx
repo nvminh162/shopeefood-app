@@ -30,7 +30,8 @@ const ItemQuantity = (props: IProps) => {
         cart[restaurant._id].items = {};
       }
 
-      cart[restaurant._id].sum = cart[restaurant._id].sum + total * item.basePrice;
+      cart[restaurant._id].sum =
+        cart[restaurant._id].sum + total * item.basePrice;
       cart[restaurant._id].quantity = cart[restaurant._id].quantity + total;
 
       // Check product is exist
@@ -41,13 +42,32 @@ const ItemQuantity = (props: IProps) => {
         };
       }
 
+      const currentQuantity = cart[restaurant._id].items[item._id].quantity + total
       cart[restaurant._id].items[item._id] = {
         data: menuItem,
-        quantity: cart[restaurant._id].items[item._id].quantity + total,
+        quantity: currentQuantity,
       };
+
+      if (currentQuantity <= 0) {
+        delete cart[restaurant._id].items[item._id];
+      }
+
+      setCart((prev: any) => ({ ...prev, cart }));
     }
-    console.log(cart);
+    // console.log(cart);
   };
+
+  let showMinus = false;
+  let quantity = 0;
+  if (restaurant?._id) {
+    const store = cart[restaurant?._id!];
+    if (store?.items && store?.items[menuItem?._id]) {
+      showMinus = true;
+      quantity = store?.items[menuItem?._id].quantity;
+    }
+  }
+
+  // const showMinus = cart[restaurant?._id!]?.items[menuItem._id] ?? false;
 
   return (
     <View
@@ -87,22 +107,31 @@ const ItemQuantity = (props: IProps) => {
               gap: 3,
             }}
           >
-            <Pressable
-              style={({ pressed }) => [
-                {
-                  opacity: pressed === true ? 0.5 : 1,
-                  alignSelf: "flex-start", //fit-content
-                },
-              ]}
-              onPress={() => handlePressItem(menuItem, "MINUS")}
-            >
-              <AntDesign
-                name="minussquareo"
-                size={24}
-                color={APP_COLOR.ORANGE}
-              />
-            </Pressable>
-            <Text style={{ minWidth: 25, textAlign: "center" }}>10</Text>
+            {/* MINUS */}
+            {showMinus && (
+              <>
+                <Pressable
+                  style={({ pressed }) => [
+                    {
+                      opacity: pressed === true ? 0.5 : 1,
+                      alignSelf: "flex-start", //fit-content
+                    },
+                  ]}
+                  onPress={() => handlePressItem(menuItem, "MINUS")}
+                >
+                  <AntDesign
+                    name="minussquareo"
+                    size={24}
+                    color={APP_COLOR.ORANGE}
+                  />
+                </Pressable>
+                {/* QUANTITY */}
+                <Text style={{ minWidth: 25, textAlign: "center" }}>
+                  {quantity}
+                </Text>
+              </>
+            )}
+            {/* PLUS */}
             <Pressable
               style={({ pressed }) => [
                 {

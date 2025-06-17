@@ -90,4 +90,20 @@ declare global {
       };
     };
   }
+  /* 
+  cart: {
+    "store-1-id": {
+      sum: 123000,
+      quantity: 3,
+      items: {
+        "product-1-id": {
+          quantity: 2,
+          data: {
+
+          }
+        }
+      }
+    }
+  }
+  */
 }

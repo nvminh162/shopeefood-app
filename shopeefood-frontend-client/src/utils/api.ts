@@ -42,14 +42,14 @@ export const getAccountAPI = () => {
 export const getTopRestaurantAPI = (ref: string) => {
   const url = `/api/v1/restaurants/${ref}`;
   return instance.post<IBackendRes<ITopRestaurant[]>>(url, {}, {
-    headers: { delay: 3000 },
+    headers: { delay: 2000 },
   });
 };
 
 export const getRestaurantByIdAPI = (id: string) => {
   const url = `/api/v1/restaurants/${id}`;
   return instance.get<IBackendRes<IRestaurant>>(url, {
-    headers: { delay: 3000 },
+    headers: { delay: 2000 },
   });
 };
 

@@ -111,4 +111,23 @@ declare global {
     }
   }
   */
+
+  interface IOrderHistory {
+    _id: string;
+    restaurant: IRestaurant;
+    user: string;
+    status: string;
+    totalPrice: number;
+    totalQuantity: number;
+    orderTime: Date;
+    detail: {
+      image: string;
+      title: string;
+      option: string;
+      price: number;
+      quantity: number;
+    }[];
+    createdAt: Date;
+    updatedAt: Date;
+  }
 }

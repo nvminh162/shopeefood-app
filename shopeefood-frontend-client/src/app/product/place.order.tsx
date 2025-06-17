@@ -19,7 +19,7 @@ interface IOrderItem {
   quantity: number;
 }
 
-const OrderPage = (props: IOrderItem) => {
+const PlaceOrderPage = (props: IOrderItem) => {
   const { restaurant, cart, setCart } = useCurrentApp();
   const [orderItems, setOrderItems] = useState<IOrderItem[]>([]);
   useEffect(() => {
@@ -85,10 +85,8 @@ const OrderPage = (props: IOrderItem) => {
       totalQuantity: cart[restaurant._id].quantity,
       detail: orderItems,
     };
-    console.log(data);
-
+    
     const res = await placeOrderAPI(data);
-
     if (res.data) {
       Toast.show("Ordered successfully!", {
         duration: Toast.durations.LONG,
@@ -359,4 +357,4 @@ const OrderPage = (props: IOrderItem) => {
   );
 };
 
-export default OrderPage;
+export default PlaceOrderPage;

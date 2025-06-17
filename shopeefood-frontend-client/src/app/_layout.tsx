@@ -165,7 +165,7 @@ const RootLayout = () => {
                 options={{ headerShown: false }}
               />
               <Stack.Screen
-                name="product/order"
+                name="product/place.order"
                 options={{ headerTitle: "Confirm order" }}
               />
               <Stack.Screen

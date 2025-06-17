@@ -53,6 +53,11 @@ export const getRestaurantByIdAPI = (id: string) => {
   });
 };
 
+export const getOrderHistoryAPI = () => {
+  const url = `/api/v1/orders`;
+  return instance.get<IBackendRes<IOrderHistory[]>>(url);
+};
+
 export const printAsyncStorage = () => {
   AsyncStorage.getAllKeys((err, keys) => {
     AsyncStorage.multiGet(keys!, (error, stores) => {

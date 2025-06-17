@@ -6,7 +6,7 @@ import { useLocalSearchParams } from "expo-router";
 import { useEffect, useState } from "react";
 import { View } from "react-native";
 
-const Product = () => {
+const ProductPage = () => {
   const { id } = useLocalSearchParams();
   const { setRestaurant } = useCurrentApp();
 
@@ -32,4 +32,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductPage;

@@ -19,11 +19,11 @@ const CreateModalPage = () => {
 
   useEffect(() => {
     if (restaurant && menuItemId) {
-      for (let i = 0; i <= restaurant.menu.length; i++) {
+      for (let i = 0; i < restaurant.menu.length; i++) {
         const menu = restaurant.menu[i];
 
         let check = false;
-        for (let j = 0; j <= menu.menuItem.length; j++) {
+        for (let j = 0; j < menu.menuItem.length; j++) {
           if (menu.menuItem[j]._id === menuItemId) {
             check = true;
             setMenuItem(menu.menuItem[j]);

@@ -5,6 +5,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { RootSiblingParent } from "react-native-root-siblings";
 import { SafeAreaView, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
+import { APP_COLOR } from "@/utils/constants";
 
 export function ErrorBoundary(props: ErrorBoundaryProps) {
   return (
@@ -139,13 +140,10 @@ const RootLayout = () => {
           <ThemeProvider value={navTheme}>
             <Stack
               screenOptions={{
-                headerStyle: {
-                  backgroundColor: "#f4511e",
-                },
-                headerTintColor: "#fff",
+                headerTintColor: APP_COLOR.ORANGE,
                 headerTitleStyle: {
-                  fontWeight: "bold",
-                },
+                  color: "black"
+                }
               }}
             >
               <Stack.Screen name="index" options={{ headerShown: false }} />
@@ -165,6 +163,10 @@ const RootLayout = () => {
               <Stack.Screen
                 name="product/[id]"
                 options={{ headerShown: false }}
+              />
+              <Stack.Screen
+                name="product/order"
+                options={{ headerTitle: "Confirm order" }}
               />
               <Stack.Screen
                 name="(auth)/login"

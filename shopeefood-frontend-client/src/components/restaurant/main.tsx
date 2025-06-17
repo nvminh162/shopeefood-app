@@ -231,7 +231,7 @@ const RMain = () => {
   ).current;
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <StickyHeader
         headerHeight={HEADER_HEIGHT}
         imageHeight={IMAGE_HEIGHT}

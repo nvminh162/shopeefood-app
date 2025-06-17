@@ -2,6 +2,7 @@ import { useCurrentApp } from "@/context/app.context";
 import { currencyFormatter } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { Pressable, Text, View } from "react-native";
 
 interface IProps {
@@ -9,7 +10,7 @@ interface IProps {
 }
 
 const StickyFooter = (props: IProps) => {
-  const { cart, setCart } = useCurrentApp();
+  const { cart } = useCurrentApp();
   const { restaurant } = props;
 
   const getSum = () => {
@@ -30,7 +31,7 @@ const StickyFooter = (props: IProps) => {
             backgroundColor: "white",
             zIndex: 11,
             position: "absolute",
-            bottom: 30,
+            bottom: 80,
             flexDirection: "row",
           }}
         >
@@ -42,14 +43,14 @@ const StickyFooter = (props: IProps) => {
               alignItems: "center",
               flex: 1,
               borderTopWidth: 1,
-              borderTopColor: APP_COLOR.ORANGE,
+              borderTopColor: APP_COLOR.GREY,
             }}
           >
-            <View style={{ padding: 10 }}>
+            <View style={{ paddingVertical: 10, paddingHorizontal: 30 }}>
               <View
                 style={{
                   position: "absolute",
-                  left: 40,
+                  left: 60,
                   top: 5,
                   width: 20,
                   height: 20,
@@ -68,7 +69,7 @@ const StickyFooter = (props: IProps) => {
                     )}
                 </Text>
               </View>
-              <Pressable onPress={() => alert("Cart")}>
+              <Pressable onPress={() => alert("@nvminh162 said: This feature is under development")}>
                 <FontAwesome5
                   name="shopping-basket"
                   size={30}
@@ -90,14 +91,14 @@ const StickyFooter = (props: IProps) => {
           {/* Right */}
           <View
             style={{
-              width: 100,
+              paddingHorizontal: 30,
               justifyContent: "center",
               alignItems: "center",
               backgroundColor: APP_COLOR.ORANGE,
             }}
           >
-            <Text style={{ color: "white" }} onPress={() => alert("Delivery")}>
-              Delivery
+            <Text style={{ color: "white" }} onPress={() => router.navigate("/product/order")}>
+              Check out
             </Text>
           </View>
         </View>

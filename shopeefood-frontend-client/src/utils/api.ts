@@ -65,6 +65,11 @@ export const printAsyncStorage = () => {
   });
 };
 
+export const placeOrderAPI = (data: any) => {
+  const url = `/api/v1/orders`;
+  return instance.post(url, {...data});
+};
+
 export const getURLBaseBackend = () => {
   const backend =
     Platform.OS === "android"

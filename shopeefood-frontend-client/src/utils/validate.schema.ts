@@ -18,6 +18,18 @@ const Schema = Yup.object().shape({
     .min(6, "Password must be at least 6 characters")
     .max(50, "Password cannot exceed 50 characters")
     .required("Password is required"),
+
+  currentPassword: Yup.string()
+    .min(6, "Password must be at least 6 characters")
+    .max(50, "Password cannot exceed 50 characters")
+    .required("Password is required"),
+  newPassword: Yup.string()
+    .min(6, "Password must be at least 6 characters")
+    .max(50, "Password cannot exceed 50 characters")
+    .required("Password is required"),
+  confirmPassword: Yup.string()
+    .required("Please confirm your password")
+    .oneOf([Yup.ref('newPassword')], "Passwords must match"),
 });
 
 // Schema Login
@@ -28,3 +40,6 @@ export const RegisterSchema = Schema.pick(["fullName", "email", "password"]);
 
 // Schema UpdateUser
 export const UpdateUserSchema = Schema.pick(["fullName", "email", "phone"]);
+
+// Schema ChangePassword
+export const ChangePasswordSchema = Schema.pick(["currentPassword", "newPassword", "confirmPassword"]);

@@ -90,6 +90,20 @@ export const updateUserAPI = (_id: string, name: string, phone: string) => {
   );
 };
 
+export const changePasswordAPI = (
+  currentPassword: string,
+  newPassword: string
+) => {
+  const url = `/api/v1/users/password`;
+  return instance.post(
+    url,
+    { currentPassword, newPassword },
+    {
+      headers: { delay: 2000 },
+    }
+  );
+};
+
 export const getURLBaseBackend = () => {
   const backend =
     Platform.OS === "android"

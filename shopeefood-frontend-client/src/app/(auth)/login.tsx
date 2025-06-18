@@ -26,6 +26,12 @@ const Login = () => {
       setIsLoading(true);
       const res = await loginAPI(email, password);
       if (res.data) {
+        Toast.show("Login Success", {
+          duration: Toast.durations.LONG,
+          textColor: "white",
+          backgroundColor: APP_COLOR.ORANGE,
+          opacity: 1,
+        });
         setAppState(res.data);
         await AsyncStorage.setItem("access_token", res.data.access_token)
         router.replace({ pathname: "/(tabs)" });
@@ -46,7 +52,13 @@ const Login = () => {
         }
       }
     } catch (err) {
-      console.log(err);
+      console.error(err);
+      Toast.show("Login invalid, let's try again!", {
+          duration: Toast.durations.LONG,
+          textColor: "white",
+          backgroundColor: APP_COLOR.ORANGE,
+          opacity: 1,
+        });
     } finally {
       setIsLoading(false);
     }

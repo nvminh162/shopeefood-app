@@ -24,6 +24,8 @@ interface IProps {
   onBlur?: (v: any) => void;
   onTextChange?: (v: any) => void;
   error?: string;
+  touched?: any;
+  editable?: boolean;
 }
 
 const ShareInput = (props: IProps) => {
@@ -37,9 +39,10 @@ const ShareInput = (props: IProps) => {
     value,
     onBlur,
     onTextChange,
-    error
+    error,
+    touched,
+    editable = true,
   } = props;
-
   return (
     <View style={styles.inputGroup}>
       {title && <Text style={styles.text}>{title}</Text>}
@@ -49,7 +52,10 @@ const ShareInput = (props: IProps) => {
           keyboardType={keyboardType}
           style={[
             styles.input,
-            { borderColor: isFocus ? APP_COLOR.ORANGE : APP_COLOR.GREY },
+            { 
+              borderColor: isFocus ? APP_COLOR.ORANGE : APP_COLOR.GREY,
+              backgroundColor: editable === false ? APP_COLOR.GREY : 'transparent'
+            },
           ]}
           onFocus={() => setIsFocus(true)}
           onBlur={(e) => {
@@ -58,10 +64,11 @@ const ShareInput = (props: IProps) => {
             }
             setIsFocus(false);
           }}
+          editable={editable}
           onChangeText={onTextChange}
           secureTextEntry={secureTextEntry && !isShowPassword}
         />
-        {error && <Text style={{ color: "red", marginTop: 5 }}>{error}</Text>}
+        {touched && error && <Text style={{ color: "red", marginTop: 5 }}>{error}</Text>}
         {secureTextEntry && (
           <Entypo
             onPress={() => setIsShowPassword(!isShowPassword)}
@@ -77,30 +84,3 @@ const ShareInput = (props: IProps) => {
 };
 
 export default ShareInput;
-
-{/* Method 1: Controlled component */}
-      {/* <ShareInput title="Fullname" value={name} setValue={setName} />
-      <ShareInput
-        title="Email"
-        keyboardType="email-address"
-        value={email}
-        setValue={setEmail}
-      />
-      <ShareInput
-        title="Password"
-        secureTextEntry={true}
-        value={password}
-        setValue={setPassword}
-      />
-      <ShareButton
-        title="Sign Up"
-        onPress={handleSignUp}
-        textStyle={{ color: "#fff", fontSize: 19 }}
-        buttonStyle={{
-          justifyContent: "center",
-          borderRadius: 30,
-          backgroundColor: APP_COLOR.ORANGE,
-          paddingVertical: 15,
-        }}
-        pressStyle={{ alignSelf: "stretch" }}
-      /> */}

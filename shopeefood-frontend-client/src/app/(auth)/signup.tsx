@@ -96,7 +96,7 @@ const SignUpPage = () => {
           handleSignUp(values.fullName, values.email, values.password)
         }
       >
-        {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
+        {({ handleChange, handleBlur, handleSubmit, values, errors, touched }) => (
           <>
             <ShareInput
               title="Fullname"
@@ -104,6 +104,7 @@ const SignUpPage = () => {
               onBlur={handleBlur("fullName")}
               value={values.fullName}
               error={errors.fullName}
+              touched={touched.fullName}
             />
             <ShareInput
               title="Email"
@@ -111,6 +112,7 @@ const SignUpPage = () => {
               onBlur={handleBlur("email")}
               value={values.email}
               error={errors.email}
+              touched={touched.email}
               keyboardType="email-address"
             />
             <ShareInput
@@ -119,6 +121,7 @@ const SignUpPage = () => {
               onBlur={handleBlur("password")}
               value={values.password}
               error={errors.password}
+              touched={touched.password}
             />
             <View style={{ marginVertical: 5 }} />
             <ShareButton

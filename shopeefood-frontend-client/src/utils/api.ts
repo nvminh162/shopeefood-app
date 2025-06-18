@@ -41,9 +41,13 @@ export const getAccountAPI = () => {
 
 export const getTopRestaurantAPI = (ref: string) => {
   const url = `/api/v1/restaurants/${ref}`;
-  return instance.post<IBackendRes<ITopRestaurant[]>>(url, {}, {
-    headers: { delay: 2000 },
-  });
+  return instance.post<IBackendRes<ITopRestaurant[]>>(
+    url,
+    {},
+    {
+      headers: { delay: 2000 },
+    }
+  );
 };
 
 export const getRestaurantByIdAPI = (id: string) => {
@@ -72,7 +76,18 @@ export const printAsyncStorage = () => {
 
 export const placeOrderAPI = (data: any) => {
   const url = `/api/v1/orders`;
-  return instance.post(url, {...data});
+  return instance.post(url, { ...data });
+};
+
+export const updateUserAPI = (_id: string, name: string, phone: string) => {
+  const url = `/api/v1/users`;
+  return instance.patch(
+    url,
+    { _id, name, phone },
+    {
+      headers: { delay: 2000 },
+    }
+  );
 };
 
 export const getURLBaseBackend = () => {

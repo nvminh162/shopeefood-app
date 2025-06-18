@@ -31,6 +31,7 @@ interface IProps {
   textStyle?: StyleProp<TextStyle>;
   buttonStyle?: StyleProp<ViewStyle>;
   pressStyle?: StyleProp<ViewStyle>;
+  disabled?: boolean;
   isLoading?: boolean;
 }
 
@@ -42,6 +43,7 @@ const ShareButton = (props: IProps) => {
     textStyle,
     buttonStyle,
     pressStyle,
+    disabled = false,
     isLoading = false,
   } = props;
 
@@ -49,13 +51,13 @@ const ShareButton = (props: IProps) => {
     <Pressable
       style={({ pressed }) => [
         {
-          opacity: pressed === true || isLoading ? 0.5 : 1,
+          opacity: pressed === true || isLoading || disabled ? 0.5 : 1,
           alignSelf: "flex-start", //fit-content
         },
         pressStyle,
       ]}
       onPress={onPress}
-      disabled={isLoading}
+      disabled={isLoading || disabled}
     >
       <View style={[styles.btnContainer, buttonStyle]}>
         {icon}

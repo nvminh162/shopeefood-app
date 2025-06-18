@@ -142,8 +142,8 @@ const RootLayout = () => {
               screenOptions={{
                 headerTintColor: APP_COLOR.ORANGE,
                 headerTitleStyle: {
-                  color: "black"
-                }
+                  color: "black",
+                },
               }}
             >
               <Stack.Screen name="index" options={{ headerShown: false }} />
@@ -159,21 +159,21 @@ const RootLayout = () => {
                 name="(auth)/welcome"
                 options={{ headerShown: false }}
               />
-              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-              <Stack.Screen
-                name="product/[id]"
-                options={{ headerShown: false }}
-              />
-              <Stack.Screen
-                name="product/place.order"
-                options={{ headerTitle: "Confirm order" }}
-              />
               <Stack.Screen
                 name="(auth)/login"
                 options={{ headerShown: false }}
               />
+              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen
-                name="product/create.modal"
+                name="(user)/product/[id]"
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen
+                name="(user)/product/place.order"
+                options={{ headerTitle: "Confirm order" }}
+              />
+              <Stack.Screen
+                name="(user)/product/create.modal"
                 options={{
                   headerShown: false,
                   animation: "fade",
@@ -181,12 +181,16 @@ const RootLayout = () => {
                 }}
               />
               <Stack.Screen
-                name="product/update.modal"
+                name="(user)/product/update.modal"
                 options={{
                   headerShown: false,
                   animation: "fade",
                   presentation: "transparentModal",
                 }}
+              />
+              <Stack.Screen
+                name="(user)/account/info"
+                options={{ headerTitle: "Update information" }}
               />
             </Stack>
           </ThemeProvider>

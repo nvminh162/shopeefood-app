@@ -10,13 +10,13 @@ import {
   Text,
   View,
 } from "react-native";
-import ShareButton from "../button/share.button";
+import ShareButton from "@/components/button/share.button";
 import { APP_COLOR } from "@/utils/constants";
 import { useState } from "react";
 import Toast from "react-native-root-toast";
 import { updateUserAPI } from "@/utils/api";
 
-const UserInfo = () => {
+const UpdateInformationPage = () => {
   const { appState, setAppState } = useCurrentApp();
   const backend =
     Platform.OS === "android"
@@ -159,4 +159,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default UserInfo;
+export default UpdateInformationPage;

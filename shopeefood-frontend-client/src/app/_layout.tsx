@@ -189,8 +189,12 @@ const RootLayout = () => {
                 }}
               />
               <Stack.Screen
-                name="(user)/account/info"
+                name="(user)/account/update.information"
                 options={{ headerTitle: "Update information" }}
+              />
+              <Stack.Screen
+                name="(user)/account/change.password"
+                options={{ headerTitle: "Change password" }}
               />
             </Stack>
           </ThemeProvider>

@@ -56,7 +56,7 @@ const AccountTab = () => {
       <View style={{ flex: 1 }}>
         {/* Update info */}
         <Pressable
-          onPress={() => router.navigate("/(user)/account/info")}
+          onPress={() => router.navigate("/(user)/account/update.information")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 10,
@@ -79,6 +79,7 @@ const AccountTab = () => {
         </Pressable>
         {/* Change password */}
         <Pressable
+          onPress={() => router.navigate("/(user)/account/change.password")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 10,
@@ -101,6 +102,7 @@ const AccountTab = () => {
         </Pressable>
         {/* Language */}
         <Pressable
+          onPress={() => alert("@nvminh162 said: This function in development")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 10,
@@ -123,6 +125,7 @@ const AccountTab = () => {
         </Pressable>
         {/* Language */}
         <Pressable
+          onPress={() => alert("@nvminh162 said: This function in development")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 10,

@@ -52,7 +52,7 @@ const Login = () => {
         }
       }
     } catch (err) {
-      console.error(err);
+      // console.error(err);
       Toast.show("Login invalid, let's try again!", {
           duration: Toast.durations.LONG,
           textColor: "white",

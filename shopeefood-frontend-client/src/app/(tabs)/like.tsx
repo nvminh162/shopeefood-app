@@ -1,7 +1,12 @@
-import { getLikeRestaurantAPI, getOrderHistoryAPI, getURLBaseBackend } from "@/utils/api";
+import {
+  getLikeRestaurantAPI,
+  getOrderHistoryAPI,
+  getURLBaseBackend,
+} from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
+import { router } from "expo-router";
 import { useEffect, useState } from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const LikeTab = () => {
@@ -14,9 +19,6 @@ const LikeTab = () => {
     };
     fetchOrderHistory();
   }, [likeRestaurant]);
-
-  console.log(likeRestaurant);
-  
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -35,14 +37,30 @@ const LikeTab = () => {
           {likeRestaurant.map((item, index) => {
             return (
               <View key={index}>
-                <View style={{ padding: 10, flexDirection: "row", gap: 10 }}>
-                  <Image style={{ height: 100, width: 100 }} source={{ uri: `${getURLBaseBackend()}/images/restaurant/${item.image}` }}/>
-                  <View style={{ gap: 10 }}>
-                    <Text>{item.name}</Text>
-                    <Text>{item.phone}</Text>
-                    <Text>{item.address}</Text>
+                <Pressable
+                  onPress={() =>
+                    router.navigate({
+                      pathname: "/product/[id]",
+                      params: { id: item._id },
+                    })
+                  }
+                >
+                  <View style={{ padding: 10, flexDirection: "row", gap: 10 }}>
+                    <Image
+                      style={{ height: 100, width: 100 }}
+                      source={{
+                        uri: `${getURLBaseBackend()}/images/restaurant/${
+                          item.image
+                        }`,
+                      }}
+                    />
+                    <View style={{ gap: 10 }}>
+                      <Text>{item.name}</Text>
+                      <Text>{item.phone}</Text>
+                      <Text>{item.address}</Text>
+                    </View>
                   </View>
-                </View>
+                </Pressable>
                 <View style={{ height: 10, backgroundColor: "#e9e9e9" }} />
               </View>
             );

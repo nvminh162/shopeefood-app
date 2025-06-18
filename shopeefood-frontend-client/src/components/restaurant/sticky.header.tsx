@@ -66,7 +66,7 @@ const StickyHeader = (props: IProps) => {
         });
       }
     } catch (err) {
-      console.error(err);
+      // console.error(err);
       Toast.show("Like action failed, please try again!", {
         duration: Toast.durations.LONG,
         textColor: "white",

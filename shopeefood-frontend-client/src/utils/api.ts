@@ -104,6 +104,19 @@ export const changePasswordAPI = (
   );
 };
 
+export const toggleLikeAPI = (restaurant: string, quantity: number) => {
+  const url = `/api/v1/likes`;
+  return instance.post(url, {
+    restaurant,
+    quantity,
+  });
+};
+
+export const getLikeRestaurantAPI = () => {
+  const url = `/api/v1/likes?current=1&pageSize=10`;
+  return instance.get<IBackendRes<IRestaurant[]>>(url);
+};
+
 export const getURLBaseBackend = () => {
   const backend =
     Platform.OS === "android"

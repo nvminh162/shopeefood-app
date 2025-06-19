@@ -1,6 +1,6 @@
 import { Image, Pressable, Text, TextInput, View } from "react-native";
 import debounce from "debounce";
-import { getRestaurantsByName, getURLBaseBackend } from "@/utils/api";
+import { getRestaurantsByNameAPI, getURLBaseBackend } from "@/utils/api";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -15,7 +15,7 @@ const SearchPage = () => {
   const handleSearch = debounce(async (text: string) => {
     setSearchTerm(text);
     if (!text) return;
-    const res = await getRestaurantsByName(text);
+    const res = await getRestaurantsByNameAPI(text);
     if (res.data) setRestaurants(res.data.results);
   }, 500);
 

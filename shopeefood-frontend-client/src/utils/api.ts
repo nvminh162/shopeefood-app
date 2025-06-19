@@ -155,7 +155,14 @@ export const currencyFormatter = (value: any) => {
   )} ${options.symbol}`;
 };
 
-export const getRestaurantsByName = (name: string) => {
+export const getRestaurantsByNameAPI = (name: string) => {
   const url = `/api/v1/restaurants?current=1&pageSize=10&name=/${name}/i`;
   return instance.get<IBackendRes<IModelPaginate<IRestaurant>>>(url);
+};
+
+export const filterRestaurantAPI = (query: string) => {
+  const url = `/api/v1/restaurants?${query}`;
+  return instance.get<IBackendRes<IModelPaginate<IRestaurant>>>(url, {
+    headers: { delay: 2000 },
+  });
 };

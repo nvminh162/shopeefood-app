@@ -1,9 +1,10 @@
-import { useState, useRef } from "react";
-import { View, StyleSheet, Animated, StatusBar } from "react-native";
+import { useState, useRef, useEffect } from "react";
+import { View, StyleSheet, Animated } from "react-native";
 import HeaderHome from "@/components/home/header.home";
 import TopList from "@/components/home/top.list";
 import BannerHome from "@/components/home/banner.home";
 import CollectionHome from "@/components/home/collection.home";
+import { router } from "expo-router";
 
 const HEADER_MAX_HEIGHT = 110; //distance from HeaderHome to Body
 
@@ -33,6 +34,12 @@ const HomeTab = () => {
   const [searchValue, setSearchValue] = useState(
     "@nvminh162 got the bang no cap"
   );
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.navigate("/(auth)/popup.sale");
+    }, 1000);
+  }, []);
 
   return (
     <View style={styles.container}>

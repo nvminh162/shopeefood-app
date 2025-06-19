@@ -165,7 +165,19 @@ const RootLayout = () => {
               />
               <Stack.Screen
                 name="(auth)/search"
-                options={{ headerShown: false, animation: "slide_from_right", }}
+                options={{ headerShown: false, animation: "slide_from_right" }}
+              />
+              <Stack.Screen
+                name="(auth)/restaurants"
+                options={{ headerShown: false, animation: "slide_from_right" }}
+              />
+              <Stack.Screen
+                name="(auth)/popup.sale"
+                options={{
+                  headerShown: false,
+                  animation: "fade",
+                  presentation: "transparentModal",
+                }}
               />
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen

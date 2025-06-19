@@ -8,11 +8,11 @@ import {
   Pressable,
 } from "react-native";
 import { APP_COLOR } from "@/utils/constants";
-import AntDesign from "@expo/vector-icons/AntDesign";
 import { useEffect, useState } from "react";
 import { getTopRestaurantAPI } from "@/utils/api";
 import { router } from "expo-router";
 import SkeletonCollectionHome from "../loading/skeleton.collection.home";
+import { MaterialIcons } from "@expo/vector-icons";
 
 interface IProps {
   name: string;
@@ -76,17 +76,19 @@ const CollectionHome = (props: IProps) => {
             >
               {name}
             </Text>
-            <View
+
+            <Pressable
+              onPress={() => router.navigate("/(auth)/restaurants")}
               style={{ flexDirection: "row", alignItems: "center", gap: 5 }}
             >
               <Text style={{ color: "#5a5a5a" }}>See all</Text>
-              <AntDesign
+              <MaterialIcons
                 style={{ color: "#5a5a5a" }}
-                name="right"
+                name="navigate-next"
                 size={15}
                 color="black"
               />
-            </View>
+            </Pressable>
           </View>
           <View style={{ marginBottom: 10 }}>
             <Text style={{ color: "#5a5a5a" }}>{description}</Text>

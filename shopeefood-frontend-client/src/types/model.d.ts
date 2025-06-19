@@ -131,4 +131,14 @@ declare global {
     createdAt: Date;
     updatedAt: Date;
   }
+
+  interface IModelPaginate<T> {
+    meta: {
+      current: number;
+      pageSize: number;
+      pages: number;
+      total: number;
+    };
+    results: T[];
+  }
 }

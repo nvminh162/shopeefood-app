@@ -163,6 +163,10 @@ const RootLayout = () => {
                 name="(auth)/login"
                 options={{ headerShown: false }}
               />
+              <Stack.Screen
+                name="(auth)/search"
+                options={{ headerShown: false, animation: "slide_from_right", }}
+              />
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen
                 name="(user)/product/[id]"

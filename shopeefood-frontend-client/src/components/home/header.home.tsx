@@ -1,7 +1,15 @@
 import React from "react";
-import { Text, View, StyleSheet, TextInput, Animated } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  Animated,
+  Pressable,
+} from "react-native";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { APP_COLOR } from "@/utils/constants";
+import { router } from "expo-router";
 
 // Constants for header animation
 const HEADER_MAX_HEIGHT = 120;
@@ -59,23 +67,25 @@ const HeaderHome = ({
         </View>
       </Animated.View>
 
-      <View style={styles.searchContainer}>
-        <View style={styles.searchInputWrapper}>
-          <Ionicons
-            name="search-outline"
-            size={20}
-            color="#888"
-            style={styles.searchIcon}
-          />
-          <TextInput
-            style={styles.searchInput}
-            value={searchValue}
-            onChangeText={setSearchValue}
-            placeholder="nvminh162 got the bang no cap"
-            readOnly
-          />
+      <Pressable onPress={() => router.navigate("/(auth)/search")}>
+        <View style={styles.searchContainer}>
+          <View style={styles.searchInputWrapper}>
+            <Ionicons
+              name="search-outline"
+              size={20}
+              color="#888"
+              style={styles.searchIcon}
+            />
+            <TextInput
+              style={styles.searchInput}
+              value={searchValue}
+              onChangeText={setSearchValue}
+              placeholder="nvminh162 got the bang no cap"
+              readOnly
+            />
+          </View>
         </View>
-      </View>
+      </Pressable>
     </Animated.View>
   );
 };
@@ -94,7 +104,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 2,
     overflow: "hidden",
-    paddingTop: 20
+    paddingTop: 20,
   },
   locationContainer: {
     justifyContent: "center",

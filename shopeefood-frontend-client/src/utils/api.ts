@@ -154,3 +154,8 @@ export const currencyFormatter = (value: any) => {
     options.thousandsSeparator
   )} ${options.symbol}`;
 };
+
+export const getRestaurantsByName = (name: string) => {
+  const url = `/api/v1/restaurants?current=1&pageSize=10&name=/${name}/i`;
+  return instance.get<IBackendRes<IModelPaginate<IRestaurant>>>(url);
+};

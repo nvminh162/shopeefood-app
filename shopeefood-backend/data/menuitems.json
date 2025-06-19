@@ -1,0 +1,1728 @@
+[{
+  "_id": {
+    "$oid": "66d5769b5d45fefd8b0b890b"
+  },
+  "menu": {
+    "$oid": "66d575e95d45fefd8b0b88e4"
+  },
+  "title": "Trà sữa Olong",
+  "basePrice": 29000,
+  "image": "vn-11134517-7r98o-lr4hhapskdcp72-1725265553176.jpg",
+  "options": [
+    {
+      "title": "SIZE",
+      "description": "M",
+      "additionalPrice": 5000
+    },
+    {
+      "title": "SIZE",
+      "description": "L",
+      "additionalPrice": 10000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T08:26:03.154Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:03:28.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d576d75d45fefd8b0b8914"
+  },
+  "menu": {
+    "$oid": "66d575e95d45fefd8b0b88e4"
+  },
+  "title": "Trà sữa XingFu",
+  "basePrice": 23000,
+  "image": "vn-11134517-7r98o-lr4hhb8dt5zt0d-1725265621230.jpg",
+  "options": [
+    {
+      "title": "SIZE",
+      "description": "M",
+      "additionalPrice": 5000
+    },
+    {
+      "title": "SIZE",
+      "description": "L",
+      "additionalPrice": 7000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T08:27:03.169Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:03:56.992Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d576f65d45fefd8b0b891d"
+  },
+  "menu": {
+    "$oid": "66d575e95d45fefd8b0b88e4"
+  },
+  "title": "Trà sữa bóng đêm",
+  "basePrice": 29000,
+  "image": "vn-11134517-7r98o-lr4ck4le6bb816-1725265652812.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:27:34.176Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:27:34.176Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d577945d45fefd8b0b8926"
+  },
+  "menu": {
+    "$oid": "66d575fe5d45fefd8b0b88ea"
+  },
+  "title": "Cafe muối Đà Nẵng ( size S)",
+  "basePrice": 25000,
+  "image": "vn-11134517-7r98o-lr0hry454szo82-1725265807763.jpg",
+  "options": [
+    {
+      "title": "HƯƠNG VỊ",
+      "description": "ÍT MUỐI",
+      "additionalPrice": 2000
+    },
+    {
+      "title": "HƯƠNG VỊ",
+      "description": "NHIỀU MUÔI",
+      "additionalPrice": 5000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T08:30:12.699Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:04:35.704Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d577e75d45fefd8b0b892f"
+  },
+  "menu": {
+    "$oid": "66d575fe5d45fefd8b0b88ea"
+  },
+  "title": "Cafe dừa size L",
+  "basePrice": 29000,
+  "image": "vn-11134517-7r98o-lr0dkdgu9xokb3-1725265894460.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:31:35.995Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:31:35.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d578565d45fefd8b0b8938"
+  },
+  "menu": {
+    "$oid": "66d575fe5d45fefd8b0b88ea"
+  },
+  "title": "Sữa tươi cafe sương sáo size L",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr0dk17e7xqx0c-1725266004601.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:33:26.555Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:33:26.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d578b65d45fefd8b0b8941"
+  },
+  "menu": {
+    "$oid": "66d576065d45fefd8b0b88f1"
+  },
+  "title": "Trà sữa trân châu đường đen",
+  "basePrice": 32000,
+  "image": "vn-11134517-7r98o-lr0gyynw3jbt4c-1725266101108.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:35:02.353Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:35:02.353Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d578da5d45fefd8b0b894a"
+  },
+  "menu": {
+    "$oid": "66d576065d45fefd8b0b88f1"
+  },
+  "title": "Sữa tươi than tre trứng muối trân châu đen",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr4cizd8i74pe3-1725266137465.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:35:38.593Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:35:38.593Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5790d5d45fefd8b0b8953"
+  },
+  "menu": {
+    "$oid": "66d576065d45fefd8b0b88f1"
+  },
+  "title": "Sữa tươi matcha trân châu đường đen",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr0de1stimqh03-1725266187408.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:36:29.401Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:36:29.401Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5792d5d45fefd8b0b895c"
+  },
+  "menu": {
+    "$oid": "66d576065d45fefd8b0b88f1"
+  },
+  "title": "Sữa tươi kem trứng trân châu đường đen",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr0cegeyla55c4-1725266219559.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:37:01.290Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:37:01.290Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57e4d5d45fefd8b0b8979"
+  },
+  "menu": {
+    "$oid": "66d5760e5d45fefd8b0b88f9"
+  },
+  "title": "Trà sữa khoai môn pudding",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr09kwo0exeh4f-1725267532211.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:58:53.685Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:58:53.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57e735d45fefd8b0b8982"
+  },
+  "menu": {
+    "$oid": "66d5760e5d45fefd8b0b88f9"
+  },
+  "title": "Olong Sữa kem cheese",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr72ubne7etg4f-1725267570137.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T08:59:31.113Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:59:31.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57ea05d45fefd8b0b898b"
+  },
+  "menu": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "title": "Trà sữa XINGFU đặc biệt size L",
+  "basePrice": 39000,
+  "image": "vn-11134517-7r98o-lr4cojun4ec9a2-1725267615361.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:00:16.594Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:00:16.594Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57ec35d45fefd8b0b8994"
+  },
+  "menu": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "title": "Cacao sữa oreo kem cheese",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr0ciqbddk7tad-1725267649824.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:00:51.249Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:00:51.249Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57ee85d45fefd8b0b899d"
+  },
+  "menu": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "title": "Trà sữa kem cheese thủy tinh củ năng",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr4ch6s30ryxa1-1725267687344.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:01:28.372Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:01:28.372Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57f195d45fefd8b0b89a6"
+  },
+  "menu": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "title": "Sữa dâu dừa kem nướng",
+  "basePrice": 33000,
+  "image": "vn-11134517-7r98o-lr0ho1r8j4bd26-1725267733019.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:02:17.715Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:02:17.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d57f365d45fefd8b0b89af"
+  },
+  "menu": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "title": "Sữa xoài dừa kem nướng",
+  "basePrice": 35000,
+  "image": "vn-11134517-7r98o-lr4cftpqtlmsaa-1725267765785.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:02:46.769Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:02:46.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d581af5d45fefd8b0b8a19"
+  },
+  "menu": {
+    "$oid": "66d581585d45fefd8b0b89e3"
+  },
+  "title": "2 cơm ba rọi nướng xá xíu + 2 ly nước mía khổng lồ",
+  "description": "2 người ăn lại có thêm dừa tươi mát lạnh",
+  "basePrice": 140000,
+  "image": "vn-11134517-7r98o-lr4dwrx3bn4433-1725268389541.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:13:19.014Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:13:19.014Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d581de5d45fefd8b0b8a20"
+  },
+  "menu": {
+    "$oid": "66d581585d45fefd8b0b89e3"
+  },
+  "title": "2 cơm gà quay mật ong + 2 ly nước mía khổng lồ",
+  "description": "Đập tan cơn nóng cùng 2 trái dừa tươi mát lạnh",
+  "basePrice": 120000,
+  "image": "vn-11134517-7r98o-lr71jfoqc2ah66-1725268445419.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:14:06.676Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:14:06.676Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d582565d45fefd8b0b8a27"
+  },
+  "menu": {
+    "$oid": "66d581585d45fefd8b0b89e3"
+  },
+  "title": "2 cơm tấm sườn cây + tặng 2 ly nước mía khổng lồ",
+  "description": "Tặng 2 ly nước mía khổng lồ giá không đổi nha khách",
+  "basePrice": 160000,
+  "image": "vn-11134517-7r98o-lr0994il12mx9f-1725268565002.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:16:06.396Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:16:06.396Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d582925d45fefd8b0b8a2e"
+  },
+  "menu": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "title": "Cơm tấm sườn miếng",
+  "description": "NHÀ EM 3 ĐỜI BÁN SƯỜN THỊT NÓNG , KHÔNG XÀI HÀNG LẠNH THỊT NHẬP KHẨU , NÊN QUÝ KHÁCH CỨ YÊN TÂM",
+  "basePrice": 50000,
+  "image": "vn-11134517-7r98o-lqx4te1wcsrd47-1725268624989.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:17:06.308Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:17:06.308Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d582b75d45fefd8b0b8a35"
+  },
+  "menu": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "title": "CƠM TẤM BA RỌI NƯỚNG XÁ XÍU",
+  "description": "Ba rọi nướng béo mềm , Best nhất",
+  "basePrice": 55000,
+  "image": "vn-11134517-7r98o-lqy1uibtmls493-1725268662393.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:17:43.405Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:17:43.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d582dd5d45fefd8b0b8a3c"
+  },
+  "menu": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "title": "Cơm tấm Sườn ốp la",
+  "basePrice": 60000,
+  "image": "vn-11134517-7r98o-lr2v9ukg8fk450-1725268700674.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:18:21.819Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:18:21.819Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583295d45fefd8b0b8a43"
+  },
+  "menu": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "title": "Cơm Tấm Sườn Bì Chả  ",
+  "basePrice": 68000,
+  "image": "vn-11134517-7r98o-lr2v9u5gucuxb3-1725268744462.jpg",
+  "options": [
+    {
+      "title": "KHĂN LẠNH",
+      "description": "1",
+      "additionalPrice": 5000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T09:19:37.606Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:19:37.606Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583695d45fefd8b0b8a4a"
+  },
+  "menu": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "title": "Cơm Gà nướng 1/4 con",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lr2whx4ihzmh2c-1725268815178.jpg",
+  "options": [
+    {
+      "title": "CHÂN GÀ",
+      "description": "1",
+      "additionalPrice": 5000
+    },
+    {
+      "title": "CHÂN GÀ",
+      "description": "2",
+      "additionalPrice": 10000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T09:20:41.145Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:20:41.145Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583935d45fefd8b0b8a51"
+  },
+  "menu": {
+    "$oid": "66d5816e5d45fefd8b0b89f0"
+  },
+  "title": "CƠM CANH CHUA CÁ HÚ",
+  "basePrice": 55000,
+  "image": "vn-11134517-7r98o-lr5mw2vhpqqhc9-1725268882327.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:21:23.854Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:21:23.854Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583b95d45fefd8b0b8a58"
+  },
+  "menu": {
+    "$oid": "66d5816e5d45fefd8b0b89f0"
+  },
+  "title": "Cơm sườn non ram mặn",
+  "basePrice": 45000,
+  "image": "vn-11134517-7r98o-lr2v18yfbah091-1725268918431.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:22:01.061Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:22:01.061Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583d85d45fefd8b0b8a5f"
+  },
+  "menu": {
+    "$oid": "66d5816e5d45fefd8b0b89f0"
+  },
+  "title": "Cơm thịt kho tiêu",
+  "basePrice": 45000,
+  "image": "vn-11134517-7r98o-lqx9ga08fxqxb6-1725268950934.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:22:32.138Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:22:32.138Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d583fe5d45fefd8b0b8a66"
+  },
+  "menu": {
+    "$oid": "66d5816e5d45fefd8b0b89f0"
+  },
+  "title": "Cơm Xíu Mại",
+  "basePrice": 45000,
+  "image": "vn-11134517-7r98o-lqxb21jhan4pf7-1725268989387.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:23:10.327Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:23:10.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d584335d45fefd8b0b8a76"
+  },
+  "menu": {
+    "$oid": "66d5841a5d45fefd8b0b8a6e"
+  },
+  "title": "Dừa trái ướp lạnh",
+  "description": "dừa ngọt",
+  "basePrice": 25000,
+  "image": "vn-11134517-7r98o-lr73htrg0tcp3a-1725269041976.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:24:03.186Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:24:03.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d585f95d45fefd8b0b8ad2"
+  },
+  "menu": {
+    "$oid": "66d5856a5d45fefd8b0b8a99"
+  },
+  "title": "Bánh tráng nướng thập cẩm",
+  "basePrice": 15000,
+  "image": "vn-11134517-7r98o-lqxmxzyzukyha9-1725269496158.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:31:37.789Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:31:55.317Z"
+  },
+  "__v": 0,
+  "description": "1 bánh bao gồm: bò,ruốc,trứng cút,hành"
+},
+{
+  "_id": {
+    "$oid": "66d5862f5d45fefd8b0b8ae3"
+  },
+  "menu": {
+    "$oid": "66d5856a5d45fefd8b0b8a99"
+  },
+  "title": "Bánh tráng nướng thập cẩm phô mai",
+  "description": "1 bánh bao gồm: bò, ruốc, trứng cút, phô mai",
+  "basePrice": 20000,
+  "image": "res3-1725269549453.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:32:31.620Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:32:31.620Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5865a5d45fefd8b0b8aec"
+  },
+  "menu": {
+    "$oid": "66d585775d45fefd8b0b8a9f"
+  },
+  "title": "Bắp xào trứng cút hộp nhỏ",
+  "description": "Bắp, trứng cút, tép, hành, Bơ vàng",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lr30swrldcbd38-1725269593621.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:33:14.645Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:33:14.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d586725d45fefd8b0b8af5"
+  },
+  "menu": {
+    "$oid": "66d585775d45fefd8b0b8a9f"
+  },
+  "title": "Bắp xào trứng cút hộp lớn",
+  "description": "Bắp xào, trứng cút, tôm khô, hành lá, Bơ vàng.",
+  "basePrice": 30000,
+  "image": "vn-11134517-7r98o-lr30swrldcbd38-1725269616407.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:33:38.383Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:33:38.383Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d586e45d45fefd8b0b8afe"
+  },
+  "menu": {
+    "$oid": "66d585815d45fefd8b0b8aa6"
+  },
+  "title": "Hột gà nướng Thái Lan",
+  "description": "2 trứng",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lr5rjbk763yx95-1725269726809.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:35:32.951Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:35:32.951Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d587085d45fefd8b0b8b07"
+  },
+  "menu": {
+    "$oid": "66d585815d45fefd8b0b8aa6"
+  },
+  "title": "Bò lá lốt nướng",
+  "description": "1 xiên 5 cái",
+  "basePrice": 25000,
+  "image": "vn-11134517-7r98o-lr30sy31fwsk1d-1725269767722.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:36:08.996Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:36:08.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d587285d45fefd8b0b8b10"
+  },
+  "menu": {
+    "$oid": "66d585815d45fefd8b0b8aa6"
+  },
+  "title": "Thịt nướng",
+  "description": "1 xiên: thịt nướng, ớt chuông đỏ",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lr30qdu2fr2c29-1725269790129.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:36:40.744Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:36:40.744Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5874a5d45fefd8b0b8b19"
+  },
+  "menu": {
+    "$oid": "66d585815d45fefd8b0b8aa6"
+  },
+  "title": "Xúc xích nướng",
+  "description": "1 xiên",
+  "basePrice": 15000,
+  "image": "vn-11134517-7r98o-lr30srfl6bic1c-1725269827374.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:37:14.086Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:37:14.086Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d587e85d45fefd8b0b8b44"
+  },
+  "menu": {
+    "$oid": "66d585a65d45fefd8b0b8ab7"
+  },
+  "title": "Gỏi cuốn tôm thịt",
+  "description": "2 cuốn .mắm nêm",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lr30sxfqe0m190-1725269991530.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:39:52.772Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:39:52.772Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58a0d5d45fefd8b0b8b91"
+  },
+  "menu": {
+    "$oid": "66d589555d45fefd8b0b8b5f"
+  },
+  "title": "Combo 1 Cơm Gà Xé Gỏi + 1 Cơm Thịt Xá Xíu + 2 Mirinda",
+  "basePrice": 130000,
+  "image": "vn-11134517-7r98o-lt29e4bztrr8c0-1725270528038.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:49:01.215Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:49:01.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58a1d5d45fefd8b0b8b9b"
+  },
+  "menu": {
+    "$oid": "66d589555d45fefd8b0b8b5f"
+  },
+  "title": "Combo 1 Cơm Gà Xé Gỏi + 1 Cơm Gà Chặt + 2 Mirinda",
+  "basePrice": 140000,
+  "image": "vn-11134517-7r98o-lt29e4bztrr8c0-1725270556964.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:49:17.947Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:49:17.947Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58a3a5d45fefd8b0b8ba5"
+  },
+  "menu": {
+    "$oid": "66d589655d45fefd8b0b8b6c"
+  },
+  "title": "Combo 1 Cơm Gà + 1 Miến Gà + 1 Cháo Gà + 3 Mirinda",
+  "basePrice": 200000,
+  "image": "vn-11134517-7r98o-lt29e4bztrr8c0-1725270585831.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:49:46.837Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:49:46.837Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58a7f5d45fefd8b0b8baf"
+  },
+  "menu": {
+    "$oid": "66d5895c5d45fefd8b0b8b65"
+  },
+  "title": "Cơm Gà Xé Gỏi + 1 Mirinda",
+  "basePrice": 64000,
+  "image": "vn-11134517-7r98o-lv448o2bobkqb9-1725270619515.jpg",
+  "options": [
+    {
+      "title": "MIRINDA",
+      "description": "2",
+      "additionalPrice": 10000
+    },
+    {
+      "title": "MIRINDA",
+      "description": "3",
+      "additionalPrice": 15000
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-02T09:50:55.030Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:50:55.030Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58a925d45fefd8b0b8bb9"
+  },
+  "menu": {
+    "$oid": "66d5895c5d45fefd8b0b8b65"
+  },
+  "title": "Cơm Gà Chặt + 1 Mirinda",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lv448o2bobkqb9-1725270672666.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:51:14.312Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:51:14.312Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58aa45d45fefd8b0b8bc3"
+  },
+  "menu": {
+    "$oid": "66d5895c5d45fefd8b0b8b65"
+  },
+  "title": "Cơm Thịt Xá Xíu + 1 Mirinda",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lv448o2bobkqb9-1725270691759.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:51:32.821Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:51:32.821Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58ac55d45fefd8b0b8bcd"
+  },
+  "menu": {
+    "$oid": "66d5896f5d45fefd8b0b8b74"
+  },
+  "title": "Cơm Gà Xé Gỏi + Canh Rong Biển",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lqxlp83gmuo408-1725270724725.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:52:05.815Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:52:05.815Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58ad95d45fefd8b0b8bd7"
+  },
+  "menu": {
+    "$oid": "66d5896f5d45fefd8b0b8b74"
+  },
+  "title": "Cơm Gà Xé Gỏi + Canh Xà Lách Xoong",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lqxlp83gmuo408-1725270744010.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:52:25.207Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:52:25.207Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58ae95d45fefd8b0b8be1"
+  },
+  "menu": {
+    "$oid": "66d5896f5d45fefd8b0b8b74"
+  },
+  "title": "Cơm & Dĩa Gỏi Gà (1 người)",
+  "basePrice": 75000,
+  "image": "vn-11134517-7r98o-lqxlp83gmuo408-1725270760643.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:52:41.645Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:52:41.645Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58b075d45fefd8b0b8beb"
+  },
+  "menu": {
+    "$oid": "66d589785d45fefd8b0b8b7d"
+  },
+  "title": "Miến Gà",
+  "description": "Đã bao gồm tiền hộp nhựa",
+  "basePrice": 53000,
+  "image": "vn-11134517-7r98o-lvlgn55uqiak2e-1725270790830.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:53:11.914Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:53:11.914Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58b215d45fefd8b0b8bf5"
+  },
+  "menu": {
+    "$oid": "66d589785d45fefd8b0b8b7d"
+  },
+  "title": "Miến Gà Đặc Biệt (Gà + Lòng Gà)",
+  "description": "Có rau sống ăn kèm. Đã bao gồm tiền hộp nhựa",
+  "basePrice": 69000,
+  "image": "vn-11134517-7r98o-lvlgn55uqiak2e-1725270807300.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:53:37.312Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:53:37.312Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58b395d45fefd8b0b8bff"
+  },
+  "menu": {
+    "$oid": "66d589785d45fefd8b0b8b7d"
+  },
+  "title": "Miến Gà Đặc Biệt (Nhiều Gà)",
+  "description": "Có rau sống ăn kèm. Đã bao gồm tiền hộp nhựa",
+  "basePrice": 70000,
+  "image": "vn-11134517-7r98o-lvlgn55uqiak2e-1725270840610.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:54:01.831Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:54:01.831Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58b585d45fefd8b0b8c09"
+  },
+  "menu": {
+    "$oid": "66d589785d45fefd8b0b8b7d"
+  },
+  "title": "Miến Lòng Gà, Trứng Non",
+  "description": "Kèm: canh súp bắp cải & rau gỏi",
+  "basePrice": 60000,
+  "image": "vn-11134517-7r98o-lvlgn55uqiak2e-1725270870190.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:54:32.063Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:54:32.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58b9f5d45fefd8b0b8c3e"
+  },
+  "menu": {
+    "$oid": "66d5898d5d45fefd8b0b8b87"
+  },
+  "title": "Nước Mơ",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lqxlugct50ux8f-1725270939843.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:55:43.582Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:55:43.582Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58bb35d45fefd8b0b8c48"
+  },
+  "menu": {
+    "$oid": "66d5898d5d45fefd8b0b8b87"
+  },
+  "title": "Nước Sâm Bông Cúc Hạt Chia Đường Phèn",
+  "basePrice": 17000,
+  "image": "vn-11134517-7r98o-lqyvp5gnowckc5-1725270962367.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:56:03.671Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:56:03.671Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58bc95d45fefd8b0b8c52"
+  },
+  "menu": {
+    "$oid": "66d5898d5d45fefd8b0b8b87"
+  },
+  "title": "Mủ Trôm Hạt Chia",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lqytg103fixl0e-1725270984027.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:56:25.047Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:56:25.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58be15d45fefd8b0b8c5c"
+  },
+  "menu": {
+    "$oid": "66d5898d5d45fefd8b0b8b87"
+  },
+  "title": "Nước Atiso Đỏ",
+  "basePrice": 20000,
+  "image": "vn-11134517-7r98o-lr0pgocqlpz884-1725271008675.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T09:56:49.839Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:56:49.839Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58f845d45fefd8b0b8ce3"
+  },
+  "menu": {
+    "$oid": "66d58d165d45fefd8b0b8c73"
+  },
+  "title": "Couple Deal 1",
+  "description": "Combo Gà Bonchon (size S - 4 miếng khuỷu cánh, 1 đùi gà), Tteokbokki Hàn Quốc, Khoai Tây Bonchon, Sụn Gà Bonchon, 02 lon nước ngọt - Bonchon Chicken Combo (size S - 4 wings pcs, 1 drumsticks), Bonchon Tteokbokki, Bonchon Fries, Chicken Joint, 02 Soft Drink Can",
+  "basePrice": 449000,
+  "image": "vn-11134517-7r98o-lqztk12f7c9072-1725271939380.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:12:20.801Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:12:20.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58f9f5d45fefd8b0b8ced"
+  },
+  "menu": {
+    "$oid": "66d58d165d45fefd8b0b8c73"
+  },
+  "title": "Group Saver",
+  "description": "Crunch Club Combo (10 miếng gà không xương, 6 miếng khuỷu cánh gà, 3 đùi gà), Khoai Tây Bonchon, Sụn Gà Bonchon, 02 lon nước ngọt - Crunch Club Combo (10 Bites, 6 Wings pcs, 3 Drumstick), Bonchon Fries, Chicken Joint, 02 Soft Drink Can",
+  "basePrice": 659000,
+  "image": "vn-11134517-7r98o-lr040w4hgi4ke5-1725271966974.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:12:47.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:12:47.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58fba5d45fefd8b0b8cf7"
+  },
+  "menu": {
+    "$oid": "66d58d165d45fefd8b0b8c73"
+  },
+  "title": "Couple Deal 2",
+  "description": "Combo Gà Bonchon (size S - 4 miếng khuỷu cánh, 1 đùi gà), Cơm Trộn Hàn Quốc Thố Nóng, Sa-Lát Đậu Chiên, Sụn Gà Bonchon, 02 lon nước ngọt - Bonchon Chicken Combo (size S - 4 wings pcs, 1 drumsticks), Hot Stone Bibimbap, Tofu Salad, Chicken Joint, 02 Soft Drink Can",
+  "basePrice": 449000,
+  "image": "vn-11134517-7r98o-lqzor8mo3lp574-1725271993560.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:13:14.696Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:13:14.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d590145d45fefd8b0b8d01"
+  },
+  "menu": {
+    "$oid": "66d58d1c5d45fefd8b0b8c79"
+  },
+  "title": "Mala Chicken Joint - Sụn gà xốt Mala ",
+  "basePrice": 85000,
+  "image": "vn-11134517-7r98o-lqznaipbg2pw7a-1725272083675.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:14:44.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:14:44.524Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5902a5d45fefd8b0b8d0b"
+  },
+  "menu": {
+    "$oid": "66d58d1c5d45fefd8b0b8c79"
+  },
+  "title": "Mala Wings (size S) - Cánh gà xốt Mala (size S) - 4pcs",
+  "basePrice": 100000,
+  "image": "vn-11134517-7r98o-lqzkdbzytv441b-1725272106009.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:15:06.958Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:15:06.958Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5904c5d45fefd8b0b8d15"
+  },
+  "menu": {
+    "$oid": "66d58d1c5d45fefd8b0b8c79"
+  },
+  "title": "Mala Combo (size S) - 4pcs Wings, 1pc Drumsticks - Combo gà xốt Mala (size S)  - 4 cánh, 1 đùi",
+  "basePrice": 149000,
+  "image": "vn-11134517-7r98o-lqzown6zdn0k7d-1725272139701.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:15:40.834Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:15:40.834Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5906e5d45fefd8b0b8d1f"
+  },
+  "menu": {
+    "$oid": "66d58d1c5d45fefd8b0b8c79"
+  },
+  "title": "Mala Combo (size L) - 8pcs Wings, 3pcs Drumsticks - Combo gà xốt Mala (size L) - 8 cánh, 3 đùi gà ",
+  "basePrice": 363000,
+  "image": "vn-11134517-7r98o-lqzkh1zoqxmseb-1725272173815.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:16:14.825Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:16:14.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5909c5d45fefd8b0b8d29"
+  },
+  "menu": {
+    "$oid": "66d58d255d45fefd8b0b8c80"
+  },
+  "title": "Wings (size M) - Cánh gà (size M) - 8pcs",
+  "description": "Cánh gà rán sốt độc bản, ăn kèm 1 phần rau củ muối chua",
+  "basePrice": 189000,
+  "image": "vn-11134517-7r98o-lqxfm47dlwgpb7-1725272219052.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:17:00.152Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:17:00.152Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d590bb5d45fefd8b0b8d33"
+  },
+  "menu": {
+    "$oid": "66d58d255d45fefd8b0b8c80"
+  },
+  "title": "Wings (size S) - Cánh gà (size S) - 4pcs",
+  "description": "Cánh gà rán sốt độc bản, ăn kèm 1 phần rau củ muối chua",
+  "basePrice": 96000,
+  "image": "vn-11134517-7r98o-lqxfu6cj0ouc5b-1725272250086.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:17:31.033Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:17:31.033Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d590db5d45fefd8b0b8d3d"
+  },
+  "menu": {
+    "$oid": "66d58d255d45fefd8b0b8c80"
+  },
+  "title": "Drumsticks (size S) - Đùi gà (size S) - 2pcs",
+  "description": "Đùi gà rán sốt độc bản, ăn kèm 1 phần rau củ muối chua",
+  "basePrice": 110000,
+  "image": "vn-11134517-7r98o-lqxfm5942ojo45-1725272282438.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:18:03.889Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:18:03.889Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d591055d45fefd8b0b8d47"
+  },
+  "menu": {
+    "$oid": "66d58d2e5d45fefd8b0b8c88"
+  },
+  "title": "Pepper Chicken Fried Rice - Cơm gà tiêu đen",
+  "description": "Cơm chiên tiêu đen kèm gà, thịt hun khói, ớt chuông và hành tây",
+  "basePrice": 96000,
+  "image": "vn-11134517-7r98o-lqxl08dd9tw91e-1725272324512.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:18:45.682Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:18:45.682Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5911c5d45fefd8b0b8d51"
+  },
+  "menu": {
+    "$oid": "66d58d2e5d45fefd8b0b8c88"
+  },
+  "title": "Bibimbap - Cơm trộn Hàn Quốc",
+  "basePrice": 110000,
+  "image": "vn-11134517-7r98o-lr409sr4sczoc5-1725272347326.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:19:08.439Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:19:08.439Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5913a5d45fefd8b0b8d5b"
+  },
+  "menu": {
+    "$oid": "66d58d355d45fefd8b0b8c91"
+  },
+  "title": "Bulgogi Japchae - Miến Trộn Hàn Quốc",
+  "description": "Miến trộn thịt bò sốt tương kiểu Hàn Quốc",
+  "basePrice": 139000,
+  "image": "vn-11134517-7r98o-lqxfsof3xpy184-1725272376837.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:19:38.041Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:19:38.041Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5915f5d45fefd8b0b8d65"
+  },
+  "menu": {
+    "$oid": "66d58d355d45fefd8b0b8c91"
+  },
+  "title": "Mini Bulgogi Japchae - Miến xào Hàn Quốc nhỏ",
+  "description": "Miến xào thịt bò sốt tương kiểu Hàn Quốc - single size",
+  "basePrice": 85000,
+  "image": "vn-11134517-7r98o-lr3wwptzjgec06-1725272414230.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:20:15.202Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:20:15.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5919c5d45fefd8b0b8d6f"
+  },
+  "menu": {
+    "$oid": "66d58d3d5d45fefd8b0b8c9b"
+  },
+  "title": "Tteokbokki Fishcake- Bánh gạo cay chả cá Hàn Quốc",
+  "description": "Bánh gạo cay sốt gochujang, phô mai và chả cá kiểu Hàn Quốc",
+  "basePrice": 139000,
+  "image": "vn-11134517-7r98o-lqxfoc8khml546-1725272475765.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:21:16.785Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:21:16.785Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d591bb5d45fefd8b0b8d79"
+  },
+  "menu": {
+    "$oid": "66d58d3d5d45fefd8b0b8c9b"
+  },
+  "title": "Tteokbokki Sausage - Bánh gạo cay xúc xích Hàn Quốc",
+  "description": "Bánh gạo cay sốt gochujang, phô mai và xúc xích kiểu Hàn Quốc",
+  "basePrice": 139000,
+  "image": "vn-11134517-7r98o-lqzm4hv7c6v8d1-1725272507064.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:21:47.959Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:21:47.959Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d591d85d45fefd8b0b8d83"
+  },
+  "menu": {
+    "$oid": "66d58d3d5d45fefd8b0b8c9b"
+  },
+  "title": "Spicy Tteokbooki - Tteokbokki siêu cay Hàn Quốc",
+  "basePrice": 149000,
+  "image": "vn-11134517-7r98o-lqz2slhof1dw00-1725272535337.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:22:16.704Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:22:16.704Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d591f45d45fefd8b0b8d8d"
+  },
+  "menu": {
+    "$oid": "66d58d3d5d45fefd8b0b8c9b"
+  },
+  "title": "Bibim Mandu & Tteok - Há Cảo Tteokbokki trộn",
+  "basePrice": 159000,
+  "image": "vn-11134517-7r98o-lqzjdkzk7q8p3d-1725272563817.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-02T10:22:44.691Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:22:44.691Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66f82d3a7f5380c3b30ae"
+  },
+  "menu": {
+    "$oid": "66d66f66d3a7f5380c3b30a9"
+  },
+  "title": "Chè Thái Truyền thống",
+  "basePrice": 24000,
+  "image": "vn-11134517-7r98o-lr37yksf18k9c9-1725329281462.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:08:02.888Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:08:02.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66f9bd3a7f5380c3b30b3"
+  },
+  "menu": {
+    "$oid": "66d66f66d3a7f5380c3b30a9"
+  },
+  "title": "Caramen Trân Châu",
+  "basePrice": 28000,
+  "image": "vn-11134517-7r98o-lr3wipdxqhll08-1725329306585.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:08:27.757Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:08:27.757Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d6700bd3a7f5380c3b30c7"
+  },
+  "menu": {
+    "$oid": "66d66fe9d3a7f5380c3b30c2"
+  },
+  "title": "Cơm Thịt Rang Chả Lá Lốt",
+  "basePrice": 45000,
+  "image": "vn-11134517-7r98o-lqxiybehbgec50-1725329419031.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:10:19.938Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:10:19.938Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67020d3a7f5380c3b30cc"
+  },
+  "menu": {
+    "$oid": "66d66fe9d3a7f5380c3b30c2"
+  },
+  "title": "Cơm Thịt Kho Trứng Cút",
+  "basePrice": 45000,
+  "image": "vn-11134517-7r98o-lqxk9hps03a1c5-1725329439040.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:10:40.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:10:40.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d670cdd3a7f5380c3b30e0"
+  },
+  "menu": {
+    "$oid": "66d670abd3a7f5380c3b30db"
+  },
+  "title": "Trà Sữa Ba Anh Em",
+  "basePrice": 29000,
+  "image": "vn-11134517-7r98o-lr0r05n5t8d501-1725329610963.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:13:33.194Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:13:33.194Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d670dcd3a7f5380c3b30e5"
+  },
+  "menu": {
+    "$oid": "66d670abd3a7f5380c3b30db"
+  },
+  "title": "Trà Sữa Trân Châu Hoàng Gia",
+  "basePrice": 29000,
+  "image": "vn-11134517-7r98o-lr0r05n5t8d501-1725329627184.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:13:48.071Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:13:48.071Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67145d3a7f5380c3b30f9"
+  },
+  "menu": {
+    "$oid": "66d67124d3a7f5380c3b30f4"
+  },
+  "title": "Bún Sườn Mọc",
+  "description": "Đã bao gồm 5000 tiền hộp",
+  "basePrice": 50000,
+  "image": "vn-11134517-7r98o-lqvyczvind8kbd-1725329732039.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:15:33.032Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:15:33.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67164d3a7f5380c3b30fe"
+  },
+  "menu": {
+    "$oid": "66d67124d3a7f5380c3b30f4"
+  },
+  "title": "Bún Thập Cẩm",
+  "description": "Đã bao gồm 5000 tiền hộp",
+  "basePrice": 55000,
+  "image": "vn-11134517-7r98o-lqvyd0r5d2v8f1-1725329763545.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:16:04.752Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:16:04.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d671c6d3a7f5380c3b3112"
+  },
+  "menu": {
+    "$oid": "66d671b0d3a7f5380c3b310d"
+  },
+  "title": "Bánh Cuốn Phủ Lý + Cam Ép",
+  "basePrice": 55000,
+  "image": "vn-11134517-7r98o-lr3l93jhro9l2e-1725329861536.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:17:42.962Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:17:42.962Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d671dcd3a7f5380c3b3117"
+  },
+  "menu": {
+    "$oid": "66d671b0d3a7f5380c3b310d"
+  },
+  "title": "Bánh Cuốn Phủ Lý + Dasani",
+  "basePrice": 50000,
+  "image": "vn-11134517-7r98o-lr6cn2r40fx5d8-1725329883246.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:18:04.897Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:18:04.897Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67232d3a7f5380c3b312b"
+  },
+  "menu": {
+    "$oid": "66d67210d3a7f5380c3b3126"
+  },
+  "title": " Bún Chả",
+  "description": "10k + đã bán | 15 thích .",
+  "basePrice": 50000,
+  "image": "vn-11134517-7r98o-lr40v2ofy5s4db-1725329966530.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:19:30.281Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:19:30.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d6724fd3a7f5380c3b3130"
+  },
+  "menu": {
+    "$oid": "66d67210d3a7f5380c3b3126"
+  },
+  "title": "Mỳ Gà Ác Tần Thuốc Bắc",
+  "basePrice": 130000,
+  "image": "vn-11134517-7r98o-lr40nsr38vix3f-1725329997505.jpg",
+  "options": [],
+  "createdAt": {
+    "$date": "2024-09-03T02:19:59.077Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:19:59.077Z"
+  },
+  "__v": 0
+}]

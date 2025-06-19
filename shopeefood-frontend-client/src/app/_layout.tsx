@@ -112,7 +112,7 @@ export function ErrorBoundary(props: ErrorBoundaryProps) {
                 fontWeight: "bold",
               }}
             >
-              Contact Admin @nvminh162
+              Contact Admin @nvminh162 - Try Again
             </Text>
           </TouchableOpacity>
         </View>

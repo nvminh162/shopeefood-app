@@ -226,7 +226,7 @@ const PlaceOrderPage = (props: IOrderItem) => {
                     cart?.[restaurant._id] &&
                     cart?.[restaurant._id].quantity) ||
                     0}
-                  món
+                  {` `}món
                 </Text>
               </View>
             </View>

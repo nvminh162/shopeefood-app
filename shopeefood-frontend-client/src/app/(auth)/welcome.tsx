@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   welcomeText: { fontSize: 40, fontWeight: "600" },
-  brandName: { fontSize: 30, color: APP_COLOR.ORANGE, marginVertical: 10 },
+  brandName: { fontSize: 25, color: APP_COLOR.ORANGE, marginVertical: 10 },
   slogan: { fontWeight: "600" },
   welcomeButtonWrapper: { flex: 0.4, gap: 15 },
 });
@@ -40,7 +40,7 @@ const WelcomePage = () => {
         <View style={styles.container}>
           <View style={styles.welcomeHeadingWrapper}>
             <Text style={styles.welcomeText}>Welcome to</Text>
-            <Text style={styles.brandName}>ShopeeFood</Text>
+            <Text style={styles.brandName}>@nvminh162 - ShopeeFood</Text>
             <Text style={styles.slogan}>
               Your favourite foods delivered fast at your door.
             </Text>

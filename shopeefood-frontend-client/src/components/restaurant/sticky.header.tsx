@@ -191,6 +191,4 @@ const StickyHeader = (props: IProps) => {
   );
 };
 
-const styles = StyleSheet.create({});
-
 export default StickyHeader;

@@ -1,0 +1,209 @@
+[{
+  "_id": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "name": "Trà Sữa Xingfuuu Chaaaa",
+  "phone": "19000",
+  "address": "Quận 12, TP. HCM",
+  "email": "trasua1@gmail.com",
+  "rating": 0,
+  "image": "trasua1-1725265259608.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-02T08:21:01.193Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:21:01.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d581385d45fefd8b0b89dc"
+  },
+  "name": "Cơm Tấm Sườn Ngon ",
+  "phone": "094544",
+  "address": "Thành Phố Thủ Đức, TP. HCM",
+  "email": "comtam@gmail.com",
+  "rating": 0,
+  "image": "res2-1725268278671.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-02T09:11:20.461Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:11:20.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d584ad5d45fefd8b0b8a92"
+  },
+  "name": "Dì Nga Nhà Thờ Phú Bình - Thức Ăn Vặt",
+  "phone": "154444",
+  "address": "Quận 11, TP. HCM",
+  "email": "thucanvat@gmail.com",
+  "rating": 0,
+  "image": "res3-1725269164601.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-02T09:26:05.869Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:26:05.869Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "name": "Cơm Gà, Cháo & Gỏi Gà Ta",
+  "phone": "145555",
+  "address": "Quận 3, TP. HCM",
+  "email": "comgata@gmail.com",
+  "rating": 0,
+  "image": "res4-1725270324941.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-02T09:45:26.135Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:45:26.135Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "name": "Bonchonnng Chicken",
+  "phone": "1254444",
+  "address": "Nhà Bè, TP. HCM",
+  "email": "bonchochicken@gmail.com",
+  "rating": 0,
+  "image": "res5-1725271297545.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-02T10:01:38.825Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:01:44.029Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66f52d3a7f5380c3b30a2"
+  },
+  "name": "Chè Ngon Phố ",
+  "phone": "1554444",
+  "address": "Bắc Từ Liêm, Hà Nội",
+  "email": "chengonpho@gmail.com",
+  "rating": 0,
+  "image": "res6-1725329231952.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:07:14.543Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:07:14.543Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66fc7d3a7f5380c3b30bb"
+  },
+  "name": "Bếp Việt - Cơm Văn Phòng",
+  "phone": "9875111",
+  "address": "Hoàng Mai, Hà Nội",
+  "email": "bepvietcom@gmail.com",
+  "rating": 0,
+  "image": "res7-1725329350536.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:09:11.702Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:09:11.702Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67098d3a7f5380c3b30d4"
+  },
+  "name": "Trà Sữa Tococoto",
+  "phone": "1544444",
+  "address": "Nam Từ Liêm, Hà Nội",
+  "email": "trasuaaaa@gmail.com",
+  "rating": 0,
+  "image": "res8-1725329559299.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:12:40.514Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:12:40.514Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67109d3a7f5380c3b30ed"
+  },
+  "name": "Bún Thủy",
+  "phone": "1544444",
+  "address": "Hoàn Kiếm, Hà Nội",
+  "email": "bunthuya@gmail.com",
+  "rating": 0,
+  "image": "res9-1725329672812.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:14:33.839Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:14:33.839Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67193d3a7f5380c3b3106"
+  },
+  "name": "Bánh Cuốn Phủ Lý",
+  "phone": "988888",
+  "address": "Hoàng Mai, Hà Nội",
+  "email": "banhcuonaa@gmail.com",
+  "rating": 0,
+  "image": "res10-1725329810831.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:16:51.762Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:16:51.762Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d6720bd3a7f5380c3b311f"
+  },
+  "name": "Bánh Cuốn Nóng, Bún Chả & Gà Tần",
+  "phone": "987777",
+  "address": "Nam Từ Liêm, Hà Nội",
+  "email": "banhcuonnong@gmail.com",
+  "rating": 0,
+  "image": "res11-1725329930467.jpg",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-09-03T02:18:51.492Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:18:51.492Z"
+  },
+  "__v": 0
+}]

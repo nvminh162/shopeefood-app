@@ -1,0 +1,924 @@
+{
+	"info": {
+		"_postman_id": "92c1b01b-be21-402d-9593-830335f4d45e",
+		"name": "nvminh162_shopeefood_postman_collection_nestjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12317336"
+	},
+	"item": [
+		{
+			"name": "module auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "delay",
+								"value": "5000",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/login",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "hoidanit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/register",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/account",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/verify-code",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"verify-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/verify-email",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"verify-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request change-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin1@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/retry-password",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"retry-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "727331",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123411",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/forgot-password",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login by social-account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "accountType",
+									"value": "GITHUB",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "abc@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/social-account",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"social-account"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "module user",
+			"item": [
+				{
+					"name": "find user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/users/66c30b148f088acd24c7a05f",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"66c30b148f088acd24c7a05f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "eric",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1235478",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/users",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "currentPassword",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/users/password",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like/Dislike a Restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "restaurant",
+									"value": "66d66f52d3a7f5380c3b30a2",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"description": "like = 1; dislike = -1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/likes",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"likes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Liked Restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/likes?current=1&pageSize=10",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"likes"
+							],
+							"query": [
+								{
+									"key": "current",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place an order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"restaurant\": \"66d5756d7d50bae39992e916\",\r\n    \"totalPrice\": 130000,\r\n    \"totalQuantity\": 10,\r\n    \"detail\": [\r\n        {\r\n        \"title\": \"Trà sữa Olong\",\r\n        \"price\": 15000,\r\n        \"quantity\": 6,\r\n        \"image\": \"vn-11134517-7r98o-lr4hhapskdcp72-1725265553176.jpg\",\r\n        \"option\":  \"SIZE-M\"      \r\n        },\r\n        {\r\n        \"title\": \"Trà sữa XingFu\",\r\n        \"price\": 10000,\r\n        \"quantity\": 4,\r\n        \"image\": \"vn-11134517-7r98o-lr4hhb8dt5zt0d-1725265621230.jpg\"\r\n        }\r\n    ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/orders",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get order history",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/orders",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "module restaurant",
+			"item": [
+				{
+					"name": "collections",
+					"item": [
+						{
+							"name": "top quán rating",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{backend_url}}/api/v1/restaurants/top-rating",
+									"host": [
+										"{{backend_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurants",
+										"top-rating"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "top quán mới lên sàn",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{backend_url}}/api/v1/restaurants/newcomer",
+									"host": [
+										"{{backend_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurants",
+										"newcomer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "top quán quán freeship",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{backend_url}}/api/v1/restaurants/top-freeship",
+									"host": [
+										"{{backend_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"restaurants",
+										"top-freeship"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "create a restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "nhà hàng hoidanit",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "369 Hà Nội",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "1abc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "abc.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/restaurants",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a restaurant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "isActive",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{backend_url}}/api/v1/restaurants",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch a restaurant by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{acess_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/restaurants/66d5756d7d50bae39992e916",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restaurants",
+								"66d5756d7d50bae39992e916"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch restaurants with pagination",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/restaurants?current=1&pageSize=10&name=/sữa/i",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restaurants"
+							],
+							"query": [
+								{
+									"key": "current",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "name",
+									"value": "/sữa/i"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "module email",
+			"item": [
+				{
+					"name": "test email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{backend_url}}/api/v1/auth/mail",
+							"host": [
+								"{{backend_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"mail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "backend_url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "acess_token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiX2lkIjoiNjZjYjM4ODIyOWEzYjdhYTdiZThlN2YxIiwibmFtZSI6IkknbSBhZG1pbiIsInJvbGUiOiJVU0VSUyIsInBob25lIjoiIiwiYWRkcmVzcyI6W10sImF2YXRhciI6ImRlZmF1bHQtdXNlci5wbmcifSwic3ViIjoiNjZjYjM4ODIyOWEzYjdhYTdiZThlN2YxIiwiaWF0IjoxNzI2NjUyMjIwLCJleHAiOjE4MTMwNTIyMjB9.HsgZjszkSkRIbIS_vkqLiQVvT5n9pZzpCp2GIbq7MMY",
+			"type": "string"
+		}
+	]
+}

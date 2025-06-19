@@ -1,0 +1,496 @@
+[{
+  "_id": {
+    "$oid": "66d575e95d45fefd8b0b88e4"
+  },
+  "restaurant": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "title": "TRÀ SỮA KHÔNG TOPPING",
+  "createdAt": {
+    "$date": "2024-09-02T08:23:05.533Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:23:05.533Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d575fe5d45fefd8b0b88ea"
+  },
+  "restaurant": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "title": "CAFE",
+  "createdAt": {
+    "$date": "2024-09-02T08:23:26.782Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:23:26.782Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d576065d45fefd8b0b88f1"
+  },
+  "restaurant": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "title": "TRÂN CHÂU ĐƯỜNG ĐEN",
+  "createdAt": {
+    "$date": "2024-09-02T08:23:34.548Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:23:34.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5760e5d45fefd8b0b88f9"
+  },
+  "restaurant": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "title": "TRÀ SỮA KEM CHEESE",
+  "createdAt": {
+    "$date": "2024-09-02T08:23:42.955Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:23:42.955Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d576235d45fefd8b0b8902"
+  },
+  "restaurant": {
+    "$oid": "66d5756d7d50bae39992e916"
+  },
+  "title": "TRÀ SỮA MIX TOPPING",
+  "createdAt": {
+    "$date": "2024-09-02T08:24:03.925Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T08:24:03.925Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d581585d45fefd8b0b89e3"
+  },
+  "restaurant": {
+    "$oid": "66d581385d45fefd8b0b89dc"
+  },
+  "title": "Combo Deal Hời",
+  "createdAt": {
+    "$date": "2024-09-02T09:11:52.090Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:11:52.090Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d581665d45fefd8b0b89e9"
+  },
+  "restaurant": {
+    "$oid": "66d581385d45fefd8b0b89dc"
+  },
+  "title": "Cơm Tấm Sài Gòn!!",
+  "createdAt": {
+    "$date": "2024-09-02T09:12:06.309Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:12:06.309Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5816e5d45fefd8b0b89f0"
+  },
+  "restaurant": {
+    "$oid": "66d581385d45fefd8b0b89dc"
+  },
+  "title": "Cơm văn phòng",
+  "createdAt": {
+    "$date": "2024-09-02T09:12:14.921Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:12:14.921Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5841a5d45fefd8b0b8a6e"
+  },
+  "restaurant": {
+    "$oid": "66d581385d45fefd8b0b89dc"
+  },
+  "title": "Cà Phê - Sinh Tố",
+  "createdAt": {
+    "$date": "2024-09-02T09:23:38.818Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:23:38.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5856a5d45fefd8b0b8a99"
+  },
+  "restaurant": {
+    "$oid": "66d584ad5d45fefd8b0b8a92"
+  },
+  "title": "Bánh Tráng Nướng",
+  "createdAt": {
+    "$date": "2024-09-02T09:29:14.824Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:29:14.824Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d585775d45fefd8b0b8a9f"
+  },
+  "restaurant": {
+    "$oid": "66d584ad5d45fefd8b0b8a92"
+  },
+  "title": "Bắp Xào",
+  "createdAt": {
+    "$date": "2024-09-02T09:29:27.467Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:29:27.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d585815d45fefd8b0b8aa6"
+  },
+  "restaurant": {
+    "$oid": "66d584ad5d45fefd8b0b8a92"
+  },
+  "title": "Đồ Nướng",
+  "createdAt": {
+    "$date": "2024-09-02T09:29:37.760Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:29:37.760Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d585a65d45fefd8b0b8ab7"
+  },
+  "restaurant": {
+    "$oid": "66d584ad5d45fefd8b0b8a92"
+  },
+  "title": "Món Cuốn",
+  "createdAt": {
+    "$date": "2024-09-02T09:30:14.050Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:30:14.050Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d589555d45fefd8b0b8b5f"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "PepsiCo Giảm 10% - Bữa Ngon Thêm Đã",
+  "createdAt": {
+    "$date": "2024-09-02T09:45:57.081Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:45:57.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5895c5d45fefd8b0b8b65"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "Giảm 42k - Pepsi Khao Bao Rẻ Bao Đã",
+  "createdAt": {
+    "$date": "2024-09-02T09:46:04.913Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:46:04.913Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d589655d45fefd8b0b8b6c"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "Giảm 50K - PepsiCo Khao Combo Nhóm",
+  "createdAt": {
+    "$date": "2024-09-02T09:46:13.961Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:46:13.961Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5896f5d45fefd8b0b8b74"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "COMBO NGON HƠN TIẾT KIỆM HƠN",
+  "createdAt": {
+    "$date": "2024-09-02T09:46:23.170Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:46:23.170Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d589785d45fefd8b0b8b7d"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "MÓN MỚI PHẢI THỬ",
+  "createdAt": {
+    "$date": "2024-09-02T09:46:32.218Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:46:32.218Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d5898d5d45fefd8b0b8b87"
+  },
+  "restaurant": {
+    "$oid": "66d589365d45fefd8b0b8b58"
+  },
+  "title": "NƯỚC UỐNG",
+  "createdAt": {
+    "$date": "2024-09-02T09:46:53.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T09:46:53.333Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d165d45fefd8b0b8c73"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "Special Deal - Đại Tiệc Siêu Ưu Đãi",
+  "createdAt": {
+    "$date": "2024-09-02T10:01:58.428Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:01:58.428Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d1c5d45fefd8b0b8c79"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "Mala Chicken - Cơn sốt Mala",
+  "createdAt": {
+    "$date": "2024-09-02T10:02:04.827Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:02:04.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d255d45fefd8b0b8c80"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "BONCHON CHICKEN - Gà rán độc bản Hàn Quốc",
+  "createdAt": {
+    "$date": "2024-09-02T10:02:13.499Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:02:13.499Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d2e5d45fefd8b0b8c88"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "KOREAN FUSION – RICE – CƠM NGON HÀN QUỐC",
+  "createdAt": {
+    "$date": "2024-09-02T10:02:22.771Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:02:22.771Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d355d45fefd8b0b8c91"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "KOREAN FUSION – NOODLE – MIẾN TRỘN CHUẨN VỊ",
+  "createdAt": {
+    "$date": "2024-09-02T10:02:29.117Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:02:29.117Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d58d3d5d45fefd8b0b8c9b"
+  },
+  "restaurant": {
+    "$oid": "66d58d025d45fefd8b0b8c69"
+  },
+  "title": "KOREAN FUSION – TTEOKBOKKI SIÊU ĐỈNH",
+  "createdAt": {
+    "$date": "2024-09-02T10:02:37.876Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-02T10:02:37.876Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66f66d3a7f5380c3b30a9"
+  },
+  "restaurant": {
+    "$oid": "66d66f52d3a7f5380c3b30a2"
+  },
+  "title": "DEAL 12K",
+  "createdAt": {
+    "$date": "2024-09-03T02:07:34.548Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:07:34.548Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d66fe9d3a7f5380c3b30c2"
+  },
+  "restaurant": {
+    "$oid": "66d66fc7d3a7f5380c3b30bb"
+  },
+  "title": "CƠM VĂN PHÒNG",
+  "createdAt": {
+    "$date": "2024-09-03T02:09:45.943Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:09:45.943Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d670abd3a7f5380c3b30db"
+  },
+  "restaurant": {
+    "$oid": "66d67098d3a7f5380c3b30d4"
+  },
+  "title": "SIGNATURE",
+  "createdAt": {
+    "$date": "2024-09-03T02:12:59.072Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:12:59.072Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67124d3a7f5380c3b30f4"
+  },
+  "restaurant": {
+    "$oid": "66d67109d3a7f5380c3b30ed"
+  },
+  "title": "COMBO SIÊU ƯU ĐÃI",
+  "createdAt": {
+    "$date": "2024-09-03T02:15:00.461Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:15:00.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d671b0d3a7f5380c3b310d"
+  },
+  "restaurant": {
+    "$oid": "66d67193d3a7f5380c3b3106"
+  },
+  "title": "Combo + Coca-cola",
+  "createdAt": {
+    "$date": "2024-09-03T02:17:20.794Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:17:20.794Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d67210d3a7f5380c3b3126"
+  },
+  "restaurant": {
+    "$oid": "66d6720bd3a7f5380c3b311f"
+  },
+  "title": "MÓN HOT",
+  "createdAt": {
+    "$date": "2024-09-03T02:18:56.843Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-03T02:18:56.843Z"
+  },
+  "__v": 0
+}]

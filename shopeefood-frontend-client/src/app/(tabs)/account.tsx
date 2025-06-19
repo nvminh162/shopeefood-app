@@ -7,6 +7,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import { Alert, Image, Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import * as Linking from 'expo-linking';
 
 const AccountTab = () => {
   const { appState } = useCurrentApp();
@@ -27,6 +28,16 @@ const AccountTab = () => {
         },
       },
     ]);
+  };
+
+  const openWebLink = async (url: string) => {
+    const canOpen = await Linking.canOpenURL(url);
+    
+    if (canOpen) {
+      await Linking.openURL(url);
+    } else {
+      Alert.alert("Lỗi", "Không thể mở liên kết này");
+    }
   };
 
   return (
@@ -123,9 +134,9 @@ const AccountTab = () => {
             color={APP_COLOR.GREY}
           />
         </Pressable>
-        {/* Language */}
+        
         <Pressable
-          onPress={() => alert("@nvminh162 said: This function in development")}
+          onPress={() => openWebLink("https://facebook.com/nvminh162")}
           style={{
             paddingVertical: 15,
             paddingHorizontal: 10,
@@ -137,7 +148,7 @@ const AccountTab = () => {
           }}
         >
           <View style={{ flexDirection: "row", gap: 10, alignItems: "center" }}>
-            <Entypo name="info-with-circle" size={20} color="black" />
+            <Feather name="external-link" size={20} color="black" />
             <Text>About</Text>
           </View>
           <MaterialIcons

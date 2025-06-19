@@ -1,7 +1,6 @@
 import { APP_COLOR } from "@/utils/constants";
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import { StatusBar } from "react-native";
 
 const getIcons = (routeName: string, focused: boolean, size: number) => {
   let iconName: keyof typeof Ionicons.glyphMap;

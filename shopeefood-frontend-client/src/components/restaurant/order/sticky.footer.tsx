@@ -31,7 +31,7 @@ const StickyFooter = (props: IProps) => {
             backgroundColor: "white",
             zIndex: 11,
             position: "absolute",
-            bottom: 80,
+            bottom: 0,
             flexDirection: "row",
           }}
         >

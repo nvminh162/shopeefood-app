@@ -43,7 +43,16 @@ const LikeTab = () => {
             paddingBottom: 5,
           }}
         >
-          <Text style={{ color: APP_COLOR.ORANGE }}>Like restaurant</Text>
+          <Text
+            style={{
+              color: APP_COLOR.ORANGE,
+              fontSize: 20,
+              fontWeight: "bold",
+              marginVertical: 15,
+            }}
+          >
+            Like restaurant
+          </Text>
         </View>
         <ScrollView
           style={{ flex: 1 }}
@@ -51,37 +60,47 @@ const LikeTab = () => {
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
           }
         >
-          {likeRestaurant.map((item, index) => {
-            return (
-              <View key={index}>
-                <Pressable
-                  onPress={() =>
-                    router.navigate({
-                      pathname: "/product/[id]",
-                      params: { id: item._id },
-                    })
-                  }
-                >
-                  <View style={{ padding: 10, flexDirection: "row", gap: 10 }}>
-                    <Image
-                      style={{ height: 100, width: 100 }}
-                      source={{
-                        uri: `${getURLBaseBackend()}/images/restaurant/${
-                          item.image
-                        }`,
-                      }}
-                    />
-                    <View style={{ gap: 10 }}>
-                      <Text>{item.name}</Text>
-                      <Text>{item.phone}</Text>
-                      <Text>{item.address}</Text>
-                    </View>
+          {likeRestaurant.length === 0 ? (
+           <View style={{ flex: 1, alignItems: "center", marginVertical: 30 }}>
+              <Text style={{ fontWeight: "bold", fontStyle: "italic" }}>Favorite Empty</Text>
+            </View>
+          ) : (
+            <>
+              {likeRestaurant.map((item, index) => {
+                return (
+                  <View key={index}>
+                    <Pressable
+                      onPress={() =>
+                        router.navigate({
+                          pathname: "/product/[id]",
+                          params: { id: item._id },
+                        })
+                      }
+                    >
+                      <View
+                        style={{ padding: 10, flexDirection: "row", gap: 10 }}
+                      >
+                        <Image
+                          style={{ height: 100, width: 100 }}
+                          source={{
+                            uri: `${getURLBaseBackend()}/images/restaurant/${
+                              item.image
+                            }`,
+                          }}
+                        />
+                        <View style={{ gap: 10 }}>
+                          <Text>{item.name}</Text>
+                          <Text>{item.phone}</Text>
+                          <Text>{item.address}</Text>
+                        </View>
+                      </View>
+                    </Pressable>
+                    <View style={{ height: 10, backgroundColor: "#e9e9e9" }} />
                   </View>
-                </Pressable>
-                <View style={{ height: 10, backgroundColor: "#e9e9e9" }} />
-              </View>
-            );
-          })}
+                );
+              })}
+            </>
+          )}
         </ScrollView>
       </View>
     </SafeAreaView>

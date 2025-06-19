@@ -3,13 +3,19 @@ import { getAccountAPI } from "@/utils/api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useFonts } from "expo-font"
+import { APP_FONT } from "@/utils/constants";
 
 SplashScreen.preventAutoHideAsync();
 
 const RootPage = () => {
   const { setAppState } = useCurrentApp();
-  const [state, setState] = useState<any>();
+
+  //Load font
+  const [loaded, error] = useFonts({
+    [APP_FONT]: require("@/assets/font/OpenSans-Regular.ttf"),
+  });
 
   useEffect(() => {
     async function prepare() {
@@ -34,11 +40,7 @@ const RootPage = () => {
           router.replace("/(auth)/welcome");
         }
       } catch (e) {
-        // console.log("Can't connect to Backend Server!");
-        // console.warn(e);
-        setState(() => {
-          throw new Error("Can't connect to Backend Server!");
-        });
+        console.log("Can't connect to Backend Server!");
       } finally {
         // Tell the application to render
         SplashScreen.hide();

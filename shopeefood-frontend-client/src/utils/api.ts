@@ -114,7 +114,9 @@ export const toggleLikeAPI = (restaurant: string, quantity: number) => {
 
 export const getLikeRestaurantAPI = () => {
   const url = `/api/v1/likes?current=1&pageSize=10`;
-  return instance.get<IBackendRes<IRestaurant[]>>(url);
+  return instance.get<IBackendRes<IRestaurant[]>>(url, {
+    headers: { delay: 2000 },
+  });
 };
 
 export const getURLBaseBackend = () => {

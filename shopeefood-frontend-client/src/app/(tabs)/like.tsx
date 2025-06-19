@@ -1,24 +1,36 @@
-import {
-  getLikeRestaurantAPI,
-  getOrderHistoryAPI,
-  getURLBaseBackend,
-} from "@/utils/api";
+import { getLikeRestaurantAPI, getURLBaseBackend } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
 import { router } from "expo-router";
 import { useEffect, useState } from "react";
-import { Image, Pressable, ScrollView, Text, View } from "react-native";
+import {
+  Image,
+  Pressable,
+  RefreshControl,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const LikeTab = () => {
   const [likeRestaurant, setLikeRestaurant] = useState<IRestaurant[]>([]);
+  //refresh
+  const [refreshing, setRefreshing] = useState<boolean>(false);
+
+  const fetchRestaurants = async () => {
+    const res = await getLikeRestaurantAPI();
+    if (res.data) setLikeRestaurant(res.data);
+  };
 
   useEffect(() => {
-    const fetchOrderHistory = async () => {
-      const res = await getLikeRestaurantAPI();
-      if (res.data) setLikeRestaurant(res.data);
-    };
-    fetchOrderHistory();
-  }, [likeRestaurant]);
+    fetchRestaurants();
+  }, []);
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    await fetchRestaurants();
+    setRefreshing(false);
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -33,7 +45,12 @@ const LikeTab = () => {
         >
           <Text style={{ color: APP_COLOR.ORANGE }}>Like restaurant</Text>
         </View>
-        <ScrollView style={{ flex: 1 }}>
+        <ScrollView
+          style={{ flex: 1 }}
+          refreshControl={
+            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+          }
+        >
           {likeRestaurant.map((item, index) => {
             return (
               <View key={index}>

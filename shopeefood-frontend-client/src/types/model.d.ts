@@ -1,11 +1,12 @@
-export {};
+export { };
 
-declare global {
-  interface IBackendRes<T> {
+declare global {  interface IBackendRes<T> {
     error?: string | string[];
     message: string | string[];
     statusCode: number | string;
     data?: T;
+    timestamp?: number;
+    author?: string;
   }
 
   interface IRegister {

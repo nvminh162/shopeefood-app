@@ -20,11 +20,13 @@ const styles = StyleSheet.create({
 const Login = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const { setAppState } = useCurrentApp();
-
   const handleLogin = async (email: string, password: string) => {
     try {
       setIsLoading(true);
       const res = await loginAPI(email, password);
+      setIsLoading(false);
+      
+      // Successful login response will have data
       if (res.data) {
         Toast.show("Login Success", {
           duration: Toast.durations.LONG,
@@ -33,11 +35,13 @@ const Login = () => {
           opacity: 1,
         });
         setAppState(res.data);
-        await AsyncStorage.setItem("access_token", res.data.access_token)
+        await AsyncStorage.setItem("access_token", res.data.access_token);
         router.replace({ pathname: "/(tabs)" });
-      } else {
+      } 
+      // Error responses from the server
+      else {
         const m = Array.isArray(res.message) ? res.message[0] : res.message;
-        Toast.show(m, {
+        Toast.show(m || "Login failed", {
           duration: Toast.durations.LONG,
           textColor: "white",
           backgroundColor: APP_COLOR.ORANGE,
@@ -51,16 +55,15 @@ const Login = () => {
           });
         }
       }
-    } catch (err) {
-      // console.error(err);
-      Toast.show("Login invalid, let's try again!", {
-          duration: Toast.durations.LONG,
-          textColor: "white",
-          backgroundColor: APP_COLOR.ORANGE,
-          opacity: 1,
-        });
-    } finally {
+    } catch (error) {
       setIsLoading(false);
+      console.error("Login error:", error);
+      Toast.show("Login failed. Please try again.", {
+        duration: Toast.durations.LONG,
+        textColor: "white",
+        backgroundColor: APP_COLOR.ORANGE,
+        opacity: 1,
+      });
     }
   };
 
@@ -119,7 +122,14 @@ const Login = () => {
         initialValues={{ email: "", password: "" }}
         onSubmit={(values) => handleLogin(values.email, values.password)}
       >
-        {({ handleChange, handleBlur, handleSubmit, values, errors, touched }) => (
+        {({
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          values,
+          errors,
+          touched,
+        }) => (
           <>
             <ShareInput
               title="Email"
@@ -137,6 +147,7 @@ const Login = () => {
               value={values.password}
               error={errors.password}
               touched={touched.password}
+              secureTextEntry
             />
             <View
               style={{

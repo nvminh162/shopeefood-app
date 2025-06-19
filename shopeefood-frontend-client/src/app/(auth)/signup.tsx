@@ -4,12 +4,12 @@ import SocialButton from "@/components/button/social.button";
 import ShareInput from "@/components/input/share.input";
 import { registerAPI } from "@/utils/api";
 import { APP_COLOR } from "@/utils/constants";
-import { Link, router } from "expo-router";
-import { useState } from "react";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import Toast from "react-native-root-toast";
-import { Formik } from "formik";
 import { RegisterSchema } from "@/utils/validate.schema";
+import { router } from "expo-router";
+import { Formik } from "formik";
+import { useState } from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Toast from "react-native-root-toast";
 
 const styles = StyleSheet.create({
   container: { flex: 1, marginHorizontal: 20, gap: 10 },
@@ -26,6 +26,7 @@ const SignUpPage = () => {
     try {
       setIsLoading(true);
       const res = await registerAPI(fullName, email, password);
+      // console.log(res);
       if (res.data) {
         router.replace({
           pathname: "/(auth)/verify",

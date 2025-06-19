@@ -67,7 +67,7 @@ const VerifyPage = () => {
   const handleResendOTPCode = async () => {
     otpRef?.current?.clear();
     const res = await resendCodeAPI(email as string);
-    const m = res.data ? "Resend Success" : res.message;
+    const m = Array.isArray(res.message) ? res.message[0] : res.message;
     Toast.show(m, {
       duration: Toast.durations.LONG,
       textColor: "white",

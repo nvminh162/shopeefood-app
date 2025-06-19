@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhoidanit_admin_antd=self.webpackChunkhoidanit_admin_antd||[]).push([[390],{96390:function(o,n,t){t.r(n),t.d(n,{default:function(){return d}});var i=t(67294),u=t(32188),a=t(85893);function d(){var E=(0,u.useOutletContext)();return(0,a.jsx)(u.Outlet,{context:E})}}}]);
